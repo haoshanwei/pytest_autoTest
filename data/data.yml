@@ -16,8 +16,8 @@ testcases:
         test1: value1
       json:
         data: {}
-      proxies:
-        http: "http://127.0.0.1:8888"
+#      proxies:
+#        http: "http://127.0.0.1:8888"
     validate:
       expectData: {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'vivo达令家', "followerInviteCode": "1117297"}}
 
