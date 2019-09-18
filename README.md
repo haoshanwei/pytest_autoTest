@@ -12,6 +12,7 @@
 - pip install redis==3.0.0 # redis
 - pip install redis-py-cluster # redis cluster
 - pip install pyyaml # ymal 文件解析
+- pip install pytest-rerunfailures # 失败重试 --reruns count
 - *** install allure 
     - mac：brew install allure
     - linux: download 二进制包
