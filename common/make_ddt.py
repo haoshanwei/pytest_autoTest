@@ -49,9 +49,3 @@ class MakeDdt():
         )  for case in testcases ]
 
         return caseParams
-
-
-if __name__ == '__main__':
-    a = MakeDdt('../data/data.yml').makeData()
-
-    print(a)
