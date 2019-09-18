@@ -20,7 +20,7 @@ user_inner_dbinfo_case = MakeDdt('data/data.yml').makeData()
 class TestUcenterInnerDbInfo():
 
     '''
-    基于 yaml 文件数据去掉的自动化case
+    基于 yaml 文件数据的自动化case
     '''
     @pytest.mark.parametrize("method, url, params, headers, cookies, proxies, status_code, expectData", user_inner_dbinfo_case)
     def test_innerDbInfo(self, method, url, params, headers, cookies, proxies, status_code, expectData):
