@@ -12,12 +12,24 @@
 
 import pytest
 from common.xc_auth import getUserHeaders
+from conf.sysconfig import UC_DB
+from conf.sysconfig import UC_REDIS
 
 
 # 达令家 auth 鉴权
 @pytest.fixture(scope='session')
 def dheaders(request):
     headers = getUserHeaders(request.param)
-    print('mobile is %s' % headers)
-
     return headers
+
+
+@pytest.fixture(scope='session')
+def uc_db():
+    return UC_DB
+
+
+@pytest.fixture(scope='session')
+def uc_redis():
+    return UC_REDIS
+
+

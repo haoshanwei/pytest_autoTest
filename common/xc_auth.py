@@ -11,22 +11,20 @@
 #                        2019/1/28  下午8:00
 
 import requests
-import records
 from urllib.parse import quote
 from random import choice
-
-sbc_slave = records.Database('postgres://pgsql:oe6Imt570Q6I2ZLd@l-db6.ops.bj2.daling.com:5495/sbc_ucenter_db')
+from conf.sysconfig import UC_DB, UC_HOST
 
 
 def getUserHeaders(mobile):
-    sql = '''SELECT T.id,T.province,T.city,T.district,T.detail,K.*FROM t_user_receive_address T JOIN (
-                            SELECT user_id,device_id,platform,app_token FROM t_user_login_device T WHERE T.user_id=(
-                            SELECT ID FROM t_user WHERE mobile='%s') AND expire_yn=0) AS K ON T.user_id=K.user_id
-                            ''' % mobile
+    sql = '''SELECT T.id,T.province,T.city,T.district,T.detail,K.* FROM t_user_receive_address T JOIN (
+                SELECT user_id,device_id,platform,app_token FROM t_user_login_device T WHERE T.user_id=(
+                SELECT ID FROM t_user WHERE mobile='%s') AND expire_yn=0) AS K ON T.user_id=K.user_id 
+            ORDER BY T.modi_date desc limit 1
+                ''' % mobile
 
-    dbresq = sbc_slave.query(sql)
-    resq = dbresq.all()
-    req = choice(resq)
+    dbresq = UC_DB.query(sql)
+    req = dbresq.all()[0]
     # 准备组装 headers
     ouid = req.user_id
     utoken = req.app_token
@@ -39,7 +37,7 @@ def getUserHeaders(mobile):
     addressId = req.id
 
     # 加密user_id
-    encryptUrl = 'http://xc.srv.daling.com/xc_uc/inner/bg/ctl/encrypt_uid.do?uid=%s' % ouid
+    encryptUrl = '%s/xc_uc/inner/bg/ctl/encrypt_uid.do?uid=%s' % (UC_HOST, ouid)
     resq = requests.get(encryptUrl).json()
     uid = resq['data']
     headers = dict(uid=uid, utoken=utoken, platform=platform, clientid=clientid,

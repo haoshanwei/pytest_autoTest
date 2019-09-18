@@ -1,0 +1,36 @@
+sammary:
+  name: demo
+  description: xc_uc/inner/dbinfo 下的所有接口的case集合
+
+testcases:
+  - name: search user info by id
+    request:
+      method: GET
+      url: /xc_uc/inner/dbinfo/user/queryById.do
+      headers:
+        AAA: BBB
+      cookies:
+        Cookie1: cookiesValue1
+      params:
+        userId: 844354
+        test1: value1
+      json:
+        data: {}
+      proxies:
+        http: "http://127.0.0.1:8888"
+    validate:
+      expectData: {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'vivo达令家', "followerInviteCode": "1117297"}}
+
+  - name: search user info by mobile
+    request:
+      method: GET
+      url: /xc_uc/inner/dbinfo/user/queryByMobile.do
+      headers:
+        AAA: BBB
+      params:
+        mobile: '18901060204'
+      proxies:
+        http: "http://127.0.0.1:8888"
+    validate:
+      status_code: 200
+      expectData: {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'mahailin', "followerInviteCode": "1089725"}}
