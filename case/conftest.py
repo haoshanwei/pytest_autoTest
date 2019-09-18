@@ -31,5 +31,3 @@ def uc_db():
 @pytest.fixture(scope='session')
 def uc_redis():
     return UC_REDIS
-
-
