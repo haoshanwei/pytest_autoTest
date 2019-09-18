@@ -34,6 +34,12 @@ pytest -v case/test_ucenterInnerUc.py
 pytest -v case/test_ucenterInnerUc.py::test_auth
 ```
 
+### 模糊匹配 case 名字
+```shell
+# 指定文件
+pytest -k ucenter
+```
+
 ### 生成pytest-html 报表
 ```shell
 # -n 2 两个线程运行case
