@@ -65,10 +65,12 @@ allure generate report/xml -o report/html --clean
 - common: 一些公用方法
 - conf: 基本的配置
 - report: 报告产出的位置
+- data: 放数据驱动的 yaml 文件
 
 ### 文件说明
 - .conftest.py: pytest 的fixture 文件，非常中有的文件，对pytest-html 报告一定的优化
 - .case/conftest.py: case 专有的一些方法，鉴权、数据库链接开启、redis连接
 - .conf/sysconfig.py: 一些基本配置
+- .common/make_ddt.py: 从yaml 文件中解析case，生成参数化数据
 
 ### 一些语法说明
