@@ -29,8 +29,8 @@ testcases:
         AAA: BBB
       params:
         mobile: '18901060204'
-      proxies:
-        http: "http://127.0.0.1:8888"
+#      proxies:
+#        http: "http://127.0.0.1:8888"
     validate:
       status_code: 200
       expectData: {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'mahailin', "followerInviteCode": "1089725"}}
