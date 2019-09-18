@@ -9,9 +9,9 @@
 - pip install pytest-xdist # 多线程工具
 - pip install requests # http 请求
 - pip install records # 数据库
-- pip install redis # redis
+- pip install redis==3.0.0 # redis
 - pip install redis-py-cluster # redis cluster
-- pip install ymal # ymal 文件解析
+- pip install pyyaml # ymal 文件解析
 - *** install allure 
     - mac：brew install allure
     - linux: download 二进制包
