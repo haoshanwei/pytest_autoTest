@@ -29,7 +29,7 @@ class MakeDdt():
 
     def fromYmlToDict(self):
         with open(self.file) as f:
-            data = yaml.load(f)
+            data = yaml.load(f, Loader=yaml.FullLoader)
 
         return data
 
