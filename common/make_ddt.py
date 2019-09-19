@@ -42,7 +42,7 @@ class MakeDdt():
             case.get('request').get('params', {}),
             case.get('request').get('headers', {}),
             case.get('request').get('cookies', {}),
-            case.get('request').get('proxies', {}),
+            case.get('sammary').get('proxies', {}),
             case.get('validate').get('status_code', 200),
             case.get('validate').get('expectData', {}),
             id=case.get('name', '接口自动化case')
