@@ -35,14 +35,16 @@ class MakeDdt():
 
 
     def makeData(self):
-        testcases = self.fromYmlToDict().get('testcases')
+        cases_infos = self.fromYmlToDict()
+        testcases = cases_infos.get('testcases')
+        sammary = cases_infos.get('sammary')
         caseParams = [pytest.param(
             case.get('request').get('method', 'GET'),
             UC_HOST + case.get('request').get('url', ''),
             case.get('request').get('params', {}),
             case.get('request').get('headers', {}),
             case.get('request').get('cookies', {}),
-            case.get('sammary').get('proxies', {}),
+            sammary.get('proxies', {}),
             case.get('validate').get('status_code', 200),
             case.get('validate').get('expectData', {}),
             id=case.get('name', '接口自动化case')
