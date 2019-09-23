@@ -11,8 +11,6 @@ testcases:
           whPosCode: null
       headers:
         Content-Type: application/json
-        Postman-Token: 837d2d67-5cbc-450e-a3f1-b698c308e7c1
-        User-Agent: PostmanRuntime/7.15.2
       method: POST
       url: http://alixc.beta.daling.com/stock/app/stock/batchSelectStock
     validate:
