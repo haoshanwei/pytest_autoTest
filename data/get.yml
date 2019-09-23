@@ -1,0 +1,118 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+    proxies:
+testcases:
+-   name: /xc_uc/inner/dbinfo/user/queryByMobile.do
+    request:
+        headers:
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+            clientid: okkkkkkkk
+            platform: ios
+            version: 1.2.6
+        method: GET
+        params:
+            mobile: '18988888888'
+        url: http://a.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByMobile.do
+    validate:
+        expectData:
+            data:
+                appOpenid: null
+                appToken: 101411386-17043-4c83af4e-e9b2-431b-8b42-f52280681e6e
+                appid: null
+                cardNo: null
+                certificationYn: 0
+                changeInviteCodeTimes: 0
+                city: 海淀
+                comments: 2018-1-11 vivo测试
+                country: CN
+                createdDate: 1515466130457
+                creatorId: 0
+                creatorName: system
+                deviceId: 6bab8fd32b6ecf6868688305dfd9622bec42d819
+                followerInviteCode: '1117297'
+                headimgurl: http://img.daling.com/data/files/mobile/img/dalingjia.jpg
+                id: 844354
+                inBacklistYn: null
+                lastAddressId: 2480
+                lastPayerId: null
+                loginForbiddenYn: null
+                loginToast: null
+                maxPayerInfoNum: 20
+                maxReceiveAddressNum: 20
+                mngSession: null
+                mobile: '18988888888'
+                modiDate: 1564990364405
+                modifierId: null
+                modifierName: null
+                nickName: 匿名
+                openid: null
+                originMobile: null
+                payPwd: f514664487212287219cdfd6b4a5d01d
+                platform: ios
+                province: 北京
+                realName: vivo达令家
+                sessionKey: null
+                sex: 1
+                showMobileYn: 0
+                status: 1
+                subscribeTime: null
+                subscribeYn: 0
+                thirdSession: 101411386-14254-44022ae8-79f2-442e-b2c7-e5bc84933850
+                touchAppid: null
+                touchOpenid: null
+                unionid: null
+                unsubscribeTime: null
+                userType: 1
+                vipRegisterTime: null
+                wechatId: null
+                wechatIdQrcode: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/queryById.do
+    request:
+        headers:
+            Postman-Token: b9831260-0be9-4f28-bf7f-37b3969c17f9
+            User-Agent: PostmanRuntime/7.15.2
+        method: GET
+        params:
+            shopId: '76274'
+        url: http://alixc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryById.do
+    validate:
+        expectData:
+            data:
+                code: '151802218013461120'
+                comments: null
+                createdDate: 1516615294578
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611244800000
+                followerInviteCode: '1164272'
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 秋秋
+                originalFollowerCode: '1164272'
+                originalFollowerName: 鑫瑶冻品，绿色磨坊
+                ownerId: 498506
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                sourceSn: '161802218012210833'
+                startDate: 1516550400000
+                status: 1
+                stewardType: 2
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200

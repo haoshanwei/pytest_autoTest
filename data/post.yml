@@ -1,0 +1,26 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+    proxies:
+      http: 'http://127.0.0.1:8888'
+testcases:
+-   name: /xc_uc/inner/manager/shop/updateShopName.do
+    request:
+        data:
+            shopId: '588975'
+            shopName: A环境
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            Postman-Token: 31366e41-8d99-4e30-bae1-17d11c0481e7
+            User-Agent: PostmanRuntime/7.15.2
+        method: POST
+        url: http://a.xc.qa.daling.com/xc_uc/inner/manager/shop/updateShopName.do
+    validate:
+        expectData:
+            data:
+                message: 店铺名称更新成功!
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
