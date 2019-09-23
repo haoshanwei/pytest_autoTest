@@ -6,21 +6,21 @@ sammary:
 #    http: "http://127.0.0.1:8888"
 
 testcases:
-  - name: 按照用户ID 查找用户信息
-    request:
-      method: GET
-      url: /xc_uc/inner/dbinfo/user/queryById.do
-      headers:
-        AAA: BBB
-      cookies:
-        Cookie1: cookiesValue1
-      params:
-        userId: 844354
-        test1: value1
-      json:
-        data: {}
-    validate:
-      expectData: {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'vivo达令家', "followerInviteCode": "1117297"}}
+#  - name: 按照用户ID 查找用户信息
+#    request:
+#      method: GET
+#      url: /xc_uc/inner/dbinfo/user/queryById.do
+#      headers:
+#        AAA: BBB
+#      cookies:
+#        Cookie1: cookiesValue1
+#      params:
+#        userId: 844354
+#        test1: value1
+#      json:
+#        data: {}
+#    validate:
+#      expectData: {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'vivo达令家', "followerInviteCode": "1117297"}}
 
   - name: search user info by mobile
     request:
@@ -32,4 +32,4 @@ testcases:
         mobile: '18901060204'
     validate:
       status_code: 200
-      expectData: {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'mahailin', "followerInviteCode": "1089725"}}
+      expectData: "{'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'mahailin', 'followerInviteCode': '1089725'}}"

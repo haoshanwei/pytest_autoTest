@@ -12,7 +12,7 @@
 
 import pytest
 import requests
-from cmp_dict import cmp_dict
+from common.res_diff import res_diff
 from conf.sysconfig import UC_HOST
 
 
@@ -26,5 +26,5 @@ class TestUcenterInnerUc():
         res = requests.get(url, headers=dheaders)
         src_data = {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'mahailin', "followerInviteCode": "1089725"}}
 
-        assert {} == cmp_dict(src_data, res.json())
+        assert {} == res_diff(src_data, res.json())
 

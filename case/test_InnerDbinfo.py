@@ -12,10 +12,11 @@
 
 import pytest
 import requests
-from cmp_dict import cmp_dict
+from common.res_diff import res_diff
 from common.make_ddt import MakeDdt
 
-user_inner_dbinfo_cases = MakeDdt('data/data.yml').makeData()
+user_inner_dbinfo_cases = MakeDdt('data/get.yml').makeData()
+
 
 class TestUcenterInnerDbInfo():
 
@@ -29,4 +30,4 @@ class TestUcenterInnerDbInfo():
         res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
 
         assert status_code == res.status_code
-        assert {} == cmp_dict(expectData, res.json())
+        assert {} == res_diff(expectData, res.json())
