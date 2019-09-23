@@ -3,7 +3,6 @@ sammary:
   description: 库存系统APP 接口
   host: ""
   proxies:
-
 testcases:
   - name: APP库存批量查询接口
     request:
