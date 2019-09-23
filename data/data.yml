@@ -6,7 +6,7 @@ sammary:
 #    http: "http://127.0.0.1:8888"
 
 testcases:
-  - name: search user info by id
+  - name: 按照用户ID 查找用户信息
     request:
       method: GET
       url: /xc_uc/inner/dbinfo/user/queryById.do
