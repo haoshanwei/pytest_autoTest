@@ -15,8 +15,7 @@ import requests
 from cmp_dict import cmp_dict
 from common.make_ddt import MakeDdt
 
-user_inner_dbinfo_cases = MakeDdt('../data/data.yml').makeData()
-app_stock_cases = MakeDdt('../data/post_json.yml').makeData()
+user_inner_dbinfo_cases = MakeDdt('data/data.yml').makeData()
 
 class TestUcenterInnerDbInfo():
 
@@ -27,16 +26,6 @@ class TestUcenterInnerDbInfo():
                              user_inner_dbinfo_cases)
     def test_innerDbInfo(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
         '''ucenterInnerDbinfo 节点下测试用例'''
-        res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
-
-        assert status_code == res.status_code
-        assert {} == cmp_dict(expectData, res.json())
-
-
-    @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
-                             app_stock_cases)
-    def test_stock(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
-        '''库存系统-测试一个 POST-JSON 的栗子'''
         res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
 
         assert status_code == res.status_code
