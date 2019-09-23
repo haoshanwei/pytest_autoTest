@@ -1,8 +1,9 @@
 sammary:
   name: demo
   description: xc_uc/inner/dbinfo 下的所有接口的case集合
-#  proxies:
-#    http: "http://127.0.0.1:8888"
+  host: "http://a.xc.qa.daling.com"
+  proxies:
+    http: "http://127.0.0.1:8888"
 
 testcases:
   - name: search user info by id

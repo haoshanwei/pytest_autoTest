@@ -11,15 +11,15 @@
 #                        2019-09-17  23:56
 
 import yaml
+import json
 import pytest
-from conf.sysconfig import UC_HOST
 
 class MakeDdt():
     '''
     为数据驱动准备：可以完全手写代码，对确定不变的信息可以 使用该方式
     输入： yaml 文件路径
-    输出：[pytest.param(method, url, params, headers, cookies, proxies, status_code, expectData, id=''),
-          pytest.param(method, url, params, headers, cookies, proxies, status_code, expectData, id='')
+    输出：[pytest.param(method, url, params, data, headers, cookies, proxies, status_code, expectData, id=''),
+          pytest.param(method, url, params, data, headers, cookies, proxies, status_code, expectData, id='')
           ]
     '''
 
@@ -40,8 +40,9 @@ class MakeDdt():
         sammary = cases_infos.get('sammary')
         caseParams = [pytest.param(
             case.get('request').get('method', 'GET'),
-            UC_HOST + case.get('request').get('url', ''),
+            sammary.get('host') + case.get('request').get('url', ''),
             case.get('request').get('params', {}),
+            json.dumps(case.get('request').get('json', {})),
             case.get('request').get('headers', {}),
             case.get('request').get('cookies', {}),
             sammary.get('proxies', {}),
