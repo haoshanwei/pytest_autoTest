@@ -34,3 +34,11 @@ def res_diff(src_data, dst_data, path='', diff=dict()):
             diff[path] = [src_data, dst_data]
 
     return diff
+
+
+if __name__ == "__main__":
+    xx = {"a":"b", "version":"1.0","status":10,"errorMsg":"全部成功","elapsed":3,"data":{"groups":[{"name":"全部","id":-1,"dispOrd":11},{"name":"面部护肤","id":1142,"dispOrd":1}],"firstCategoryList":[{"name":"美妆个护","id":1041,"dispOrd":12},{"name":"食品生鲜","id":1004,"dispOrd":13}]}}
+    yy = {"version":"1.0","status":0,"errorMsg":"全部成功","elapsed":3,"data":{"groups":[{"name":"全部","id":-1,"dispOrd":1},{"name":"面部护肤","id":1042,"dispOrd":1}],"firstCategoryList":[{"name":"美妆个护","id":1041,"dispOrd":12},{"name":"食品生鲜","id":1004,"dispOrd":13}]}}
+    diff = res_diff(xx, yy)
+    for k, v in diff.items():
+        print('key is {} -> value is {}'.format(k, v))
