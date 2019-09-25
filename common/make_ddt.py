@@ -28,7 +28,7 @@ class MakeDdt():
 
 
     def fromYmlToDict(self):
-        with open(self.file) as f:
+        with open(self.file, encoding='utf-8') as f:
             data = yaml.load(f)
 
         return data
@@ -38,18 +38,6 @@ class MakeDdt():
         cases_infos = self.fromYmlToDict()
         testcases = cases_infos.get('testcases')
         sammary = cases_infos.get('sammary')
-        # caseParams = [pytest.param(
-        #     case.get('request').get('method', 'GET'),
-        #     sammary.get('host') + case.get('request').get('url', ''),
-        #     case.get('request').get('params', {}),
-        #     case.get('request').get('data', {}),
-        #     case.get('request').get('headers', {}),
-        #     case.get('request').get('cookies', {}),
-        #     sammary.get('proxies', {}),
-        #     case.get('validate').get('status_code', 200),
-        #     case.get('validate').get('expectData', {}),
-        #     id=case.get('name', '接口自动化case')
-        # )  for case in testcases ]
 
         caseParams = []
         for case in testcases:
