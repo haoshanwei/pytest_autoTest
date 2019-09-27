@@ -2,8 +2,6 @@ sammary:
     description: testcase description
     host: ''
     name: testcase title
-    proxies:
-          http: 'http://127.0.0.1:8888'
 testcases:
 -   name: /xc_uc/inner/bg/ctl/encrypt_uid.do
     request:
