@@ -12,7 +12,7 @@
 
 import pytest
 import requests
-from common.res_diff import res_diff
+from dutil.res_diff import res_diff
 from conf.sysconfig import UC_HOST
 
 

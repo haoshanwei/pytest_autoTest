@@ -13,8 +13,8 @@
 import os
 import pytest
 import requests
-from common.res_diff import res_diff
-from common.make_ddt import MakeDdt
+from dutil.res_diff import res_diff
+from dutil.make_ddt import MakeDdt
 
 casepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'uc_inner_bg_ctl.yml')
 test_cases = MakeDdt(casepath).makeData()

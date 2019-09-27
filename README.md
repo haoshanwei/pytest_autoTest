@@ -13,6 +13,7 @@
 - pip install redis-py-cluster # redis cluster
 - pip install pyyaml # ymal 文件解析
 - pip install pytest-rerunfailures # 失败重试 --reruns count
+- pip install -i http://pypi.corp.daling.com/simple dutil --trusted-host pypi.corp.daling.com # 公用类
 - install allure
   - mac：brew install allure
   - linux: download 二进制包

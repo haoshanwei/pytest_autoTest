@@ -11,15 +11,16 @@
 #                        2019-09-17  14:31
 
 import pytest
-from common.xc_auth import getUserHeaders
+from dutil.xc_auth import getUserHeaders
 from conf.sysconfig import UC_DB
+from conf.sysconfig import UC_HOST
 from conf.sysconfig import UC_REDIS
 
 
 # 达令家 auth 鉴权
 @pytest.fixture(scope='session')
 def dheaders(request):
-    headers = getUserHeaders(request.param)
+    headers = getUserHeaders(request.param, UC_DB, UC_HOST)
     return headers
 
 
