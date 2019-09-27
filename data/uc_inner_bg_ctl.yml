@@ -1,0 +1,90 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/bg/ctl/encrypt_uid.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            uid: '1028'
+        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/encrypt_uid.do
+    validate:
+        expectData:
+            acc_point: '61'
+            clientFrom: ''
+            data: '0400000600001040070106324'
+            errmsg: 全部成功
+            get_url: ''
+            secur_type: 599
+            status: 0
+            track_id: bcd4b8cd-b86c-4410-b6f7-a35ceeffdd50
+        status_code: 200
+-   name: /xc_uc/inner/bg/ctl/decrypt_uid.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            uid: '0400000600001040070106324'
+        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/decrypt_uid.do
+    validate:
+        expectData:
+            acc_point: '61'
+            clientFrom: ''
+            data:
+                code: 0
+                message: 解密成功
+                other: null
+                retBool: true
+                t: 1028
+                total: 0
+            errmsg: 全部成功
+            get_url: ''
+            secur_type: 599
+            status: 0
+            track_id: 33c098f9-d194-45bb-9dc0-23e07912ad03
+        status_code: 200
+-   name: /xc_uc/inner/bg/ctl/decryptIdNo.do
+    request:
+        data:
+            IdNo: 7/w/ReZyXI444QQPsz9uv+jcn/H81L89
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.17.1
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/decryptIdNo.do
+    validate:
+        expectData:
+            acc_point: '61'
+            clientFrom: ''
+            data: '430528198708173311'
+            errmsg: 全部成功
+            get_url: ''
+            secur_type: 599
+            status: 0
+            track_id: f40f8a7d-1c17-49a8-a6fa-cf42a21994a1
+        status_code: 200
+-   name: /xc_uc/inner/bg/ctl/batch_encrypt_uid.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            uids: '1037'
+        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/batch_encrypt_uid.do
+    validate:
+        expectData:
+            acc_point: '61'
+            clientFrom: ''
+            data:
+                '1028': '0400000600001040070106324'
+                '1037': 0500000100001040070204284
+            errmsg: 全部成功
+            get_url: ''
+            secur_type: 599
+            status: 0
+            track_id: d7fb886b-9275-4f10-979c-76fcdef99666
+        status_code: 200

@@ -1,0 +1,77 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/dbinfo/user_shop/uids.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            ids: 1964478,878243
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user_shop/uids.do
+    validate:
+        expectData:
+            data:
+            -   headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIej063rpdVzRqGmktDSmGaKlt3n4RjVFRRZPrdHVe48DsJbQkgH7ia84QEI9jffhQ3NYzzOkFKY2A/132
+                id: 1964478
+                mobile: '15147943808'
+                nickName: 阿木
+                realName: 孟根娜布其
+                recruitLevel: 0
+                shopCode: '1815609352569546'
+                shopCreatedDate: 1528162525000
+                shopId: 210861
+                shopStatus: 1
+            -   headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erKTkibeqqOvMsYF05gV0ZxtskL2nkic1SMD5klsLeL7aNCnVjwiaGUGksVsBYt7fELLf0W6UBmaibzsA/132
+                id: 878243
+                mobile: '15058116480'
+                nickName: 小酒窝
+                realName: 李萍
+                recruitLevel: 0
+                shopCode: '201815107252346768'
+                shopCreatedDate: 1527722723632
+                shopId: 202860
+                shopStatus: 1
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/user_shop/queryByRealname.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            realName: 秋秋
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user_shop/queryByRealname.do
+    validate:
+        expectData:
+            data:
+            -   id: 9892453
+                shopid: 806357
+            -   id: 9899530
+                shopid: 808073
+            -   id: 12626542
+                shopid: 1036187
+            -   id: 14562649
+                shopid: 1227094
+            -   id: 14687900
+                shopid: 1581758
+            -   id: 16147510
+                shopid: 1503912
+            -   id: 498506
+                shopid: 76274
+            -   id: 1739980
+                shopid: 124916
+            -   id: 4949589
+                shopid: 448128
+            -   id: 16420741
+                shopid: 1525220
+            -   id: 2950497
+                shopid: 1759426
+            -   id: 16125799
+                shopid: 1519470
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200

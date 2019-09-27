@@ -16,19 +16,18 @@ import requests
 from common.res_diff import res_diff
 from common.make_ddt import MakeDdt
 
-casepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'get.yml')
-user_inner_dbinfo_cases = MakeDdt(casepath).makeData()
+casepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'uc_inner_bg_ctl.yml')
+test_cases = MakeDdt(casepath).makeData()
 
 
-class TestUcenterInnerDbInfo():
-
+class TestUcenterInnerBgCtl():
     '''
     基于 yaml 文件数据的自动化case
     '''
     @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
-                             user_inner_dbinfo_cases)
-    def test_innerDbInfo(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
-        '''ucenterInnerDbinfo 节点下测试用例'''
+                             test_cases)
+    def test_inner_bg_ctl(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
+        '''/inner/bg/ctl/'''
         res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
 
         assert status_code == res.status_code

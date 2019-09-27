@@ -1,0 +1,787 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/dbinfo/shop/queryById.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            shopId: '76274'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryById.do
+    validate:
+        expectData:
+            data:
+                code: '151802218013461120'
+                comments: null
+                createdDate: 1516615294578
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611244800000
+                followerInviteCode: '1164272'
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 秋秋
+                originalFollowerCode: '1164272'
+                originalFollowerName: 鑫瑶冻品，绿色磨坊
+                ownerId: 498506
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                sourceSn: '161802218012210833'
+                startDate: 1516550400000
+                status: 1
+                stewardType: 2
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/queryByIds.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            shopIds: 76274,76275
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByIds.do
+    validate:
+        expectData:
+            data:
+            -   code: '151802218013461120'
+                createdDate: 1516615294578
+                endDate: 1611244800000
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                mobile: '13466977615'
+                name: 秋秋
+                ownerId: 498506
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                startDate: 1516550400000
+                status: 1
+            -   code: '181802218025029477'
+                createdDate: 1516615370622
+                endDate: 1611244800000
+                id: 76275
+                indexImg: http://img6.daling.com/zin/2018/06/04/19/48/FA163E0C4D3EI64J3QFGQ3KQ6EK.jpg_200x200.jpg
+                inviteCode: '1164951'
+                mobile: '13634115541'
+                name: 小猛
+                ownerId: 158856
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                startDate: 1516550400000
+                status: 1
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/queryByMobile.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            mobile: '15058116480'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByMobile.do
+    validate:
+        expectData:
+            data:
+                code: '201815107252346768'
+                comments: null
+                createdDate: 1527722723632
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1622390400000
+                followerInviteCode: '1261043'
+                id: 202860
+                indexImg: http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eopdlLGlVpwZRXCrhDbqhKWxqiaHh2N2fv6ceaaISLrkicenaxHoJ3KDcDP3Yoq4Eum9eNXyC516ZvA/132
+                inviteCode: '1291536'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 小酒窝
+                originalFollowerCode: '1261043'
+                originalFollowerName: 润物细无声18268857845
+                ownerId: 878243
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '261815107251638306'
+                startDate: 1527696000000
+                status: 1
+                stewardType: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/queryByMobiles.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            mobiles: 15058116480,13466977615
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByMobiles.do
+    validate:
+        expectData:
+            data:
+            -   code: '151802218013461120'
+                comments: null
+                createdDate: 1516615294578
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611244800000
+                followerInviteCode: '1164272'
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 秋秋
+                originalFollowerCode: '1164272'
+                originalFollowerName: 鑫瑶冻品，绿色磨坊
+                ownerId: 498506
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                sourceSn: '161802218012210833'
+                startDate: 1516550400000
+                status: 1
+                stewardType: 2
+            -   code: '201815107252346768'
+                comments: null
+                createdDate: 1527722723632
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1622390400000
+                followerInviteCode: '1261043'
+                id: 202860
+                indexImg: http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eopdlLGlVpwZRXCrhDbqhKWxqiaHh2N2fv6ceaaISLrkicenaxHoJ3KDcDP3Yoq4Eum9eNXyC516ZvA/132
+                inviteCode: '1291536'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 小酒窝
+                originalFollowerCode: '1261043'
+                originalFollowerName: 润物细无声18268857845
+                ownerId: 878243
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '261815107251638306'
+                startDate: 1527696000000
+                status: 1
+                stewardType: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/queryByOwnerId.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            ownerId: '1037'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByOwnerId.do
+    validate:
+        expectData:
+            data:
+                code: '111723621103693997'
+                comments: null
+                createdDate: 1503580236936
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1598198400000
+                followerInviteCode: '1089684'
+                id: 2166
+                indexImg: http://img.cdn.daling.com/zin/2017/11/07/FA163E0BD2F9HB7H2W0DXAT2SCT.jpg_200x200.jpg
+                inviteCode: '1090838'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: Mr.H
+                originalFollowerCode: '1089684'
+                originalFollowerName: 大个
+                ownerId: 1037
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '111723621102993984'
+                startDate: 1503504000000
+                status: 1
+                stewardType: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/queryByInviteCode.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            inviteCode: '1164950'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByInviteCode.do
+    validate:
+        expectData:
+            data:
+                code: '151802218013461120'
+                comments: null
+                createdDate: 1516615294578
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611244800000
+                followerInviteCode: '1164272'
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 秋秋
+                originalFollowerCode: '1164272'
+                originalFollowerName: 鑫瑶冻品，绿色磨坊
+                ownerId: 498506
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                sourceSn: '161802218012210833'
+                startDate: 1516550400000
+                status: 1
+                stewardType: 2
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/queryByCode.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            shopCode: '151802218013461120'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByCode.do
+    validate:
+        expectData:
+            data:
+                code: '151802218013461120'
+                comments: null
+                createdDate: 1516615294578
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611244800000
+                followerInviteCode: '1164272'
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 秋秋
+                originalFollowerCode: '1164272'
+                originalFollowerName: 鑫瑶冻品，绿色磨坊
+                ownerId: 498506
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                sourceSn: '161802218012210833'
+                startDate: 1516550400000
+                status: 1
+                stewardType: 2
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/findAllViaFollowerInviteCodeById.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            shopId: '76274'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/findAllViaFollowerInviteCodeById.do
+    validate:
+        expectData:
+            data:
+            -   code: '151802218013461120'
+                comments: null
+                createdDate: 1516615294578
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611244800000
+                followerInviteCode: '1164272'
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 秋秋
+                originalFollowerCode: '1164272'
+                originalFollowerName: 鑫瑶冻品，绿色磨坊
+                ownerId: 498506
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                sourceSn: '161802218012210833'
+                startDate: 1516550400000
+                status: 1
+                stewardType: 2
+            -   code: '171802118103677934'
+                comments: null
+                createdDate: 1516529436426
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611158400000
+                followerInviteCode: '000000'
+                id: 75596
+                indexImg: http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er0CnNTxAMSO6FbnhZYd19a5lmJkmeFuOZOwLGHnKfOg2qoJkRE2byxP8jSoOK4VuwczwjjbNGvBA/132
+                inviteCode: '1164272'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 鑫瑶冻品，绿色磨坊
+                originalFollowerCode: '1163220'
+                originalFollowerName: 香港丝洛芬健康内衣总代理
+                ownerId: 1058323
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '181802118102938139'
+                startDate: 1516464000000
+                status: 1
+                stewardType: 1
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/findOriginFollowerInviteCodeShopList.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            shopId: '76274'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/findOriginFollowerInviteCodeShopList.do
+    validate:
+        expectData:
+            data:
+            -   code: '151802218013461120'
+                comments: null
+                createdDate: 1516615294578
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611244800000
+                followerInviteCode: '1164272'
+                id: 76274
+                indexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+                inviteCode: '1164950'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 秋秋
+                originalFollowerCode: '1164272'
+                originalFollowerName: 鑫瑶冻品，绿色磨坊
+                ownerId: 498506
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img6.daling.com/zin/2018/06/07/06/35/FA163E0BD2F9I6762QA43C3IA5I.jpg
+                sourceSn: '161802218012210833'
+                startDate: 1516550400000
+                status: 1
+                stewardType: 2
+            -   code: '171802118103677934'
+                comments: null
+                createdDate: 1516529436426
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611158400000
+                followerInviteCode: '000000'
+                id: 75596
+                indexImg: http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er0CnNTxAMSO6FbnhZYd19a5lmJkmeFuOZOwLGHnKfOg2qoJkRE2byxP8jSoOK4VuwczwjjbNGvBA/132
+                inviteCode: '1164272'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 鑫瑶冻品，绿色磨坊
+                originalFollowerCode: '1163220'
+                originalFollowerName: 香港丝洛芬健康内衣总代理
+                ownerId: 1058323
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '181802118102938139'
+                startDate: 1516464000000
+                status: 1
+                stewardType: 1
+            -   code: '191801922263293874'
+                comments: ' 初始化粉钻升级时间'
+                createdDate: 1516371992344
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店，只有对的，没有贵的！
+                endDate: 1610985600000
+                followerInviteCode: '000000'
+                id: 74544
+                indexImg: http://img1.daling.com/zin/2018/09/09/13/39/FA163E0BD2F9I99D30PR7R1II8P.jpg_200x200.jpg
+                inviteCode: '1163220'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 芬儿的全球购网店
+                originalFollowerCode: '1161277'
+                originalFollowerName: 鼎盛广告13753982155
+                ownerId: 524188
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '171801922262354412'
+                startDate: 1516291200000
+                status: 1
+                stewardType: 1
+            -   code: '171801712012793641'
+                comments: ' 初始化粉钻升级时间'
+                createdDate: 1516161687796
+                creatorId: 0
+                creatorName: system
+                description: 加入达令店主，得399尤物币送全球精品超市自购自省～分享赚钱
+                endDate: 1610812800000
+                followerInviteCode: '000000'
+                id: 72601
+                indexImg: http://img4.daling.com/zin/2018/08/27/09/13/FA163E9D6606I8R911MCQO22KLR.jpg_200x200.jpg
+                inviteCode: '1161277'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 红琴全球网店～达令家
+                originalFollowerCode: '1125852'
+                originalFollowerName: 赵晓丽
+                ownerId: 980149
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img0.daling.com/zin/2018/04/18/FA163E0BD2F9I4IC3Z9IARI3CI8.jpg
+                sourceSn: '171801712011993630'
+                startDate: 1516118400000
+                status: 1
+                stewardType: 1
+            -   code: '111733217141314650'
+                comments: ' 初始化粉钻升级时间2018-06-05 6月初大粉钻初始化变更，原大粉钻刷新为：02018-06-05 6月初大粉钻初始化卡位粉钻'
+                createdDate: 1511860453395
+                creatorId: 0
+                creatorName: system
+                description: 天之明静，阳光正好，邂逅最美丽的遇见，一切美好温暖如初！ฅฅ
+                endDate: 1606492800000
+                followerInviteCode: '000000'
+                id: 37176
+                indexImg: http://img6.daling.com/zin/2018/04/29/FA163E0BD2F9I4TF29Y9SPBPRBB.jpg_200x200.jpg
+                inviteCode: '1125852'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 小狸
+                originalFollowerCode: '1124587'
+                originalFollowerName: 知画
+                ownerId: 173793
+                pinkBlockoutYn: 1
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/zin/2017/11/28/FA163E0BD2F9HBSH39KQ7IIPQ5A.jpg
+                sourceSn: '111733217140614647'
+                startDate: 1511798400000
+                status: 1
+                stewardType: 1
+            -   code: '111733110500989867'
+                comments: 周20171127卡位粉钻2018-02-07 李庭轩初始化卡位粉钻标记为120180414临时用这个标记大粉钻by周科峰卡位粉钻标记5月大粉钻前，清空4月大粉钻初始化粉钻升级时间初始化粉钻升级时间
+                createdDate: 1511751009974
+                creatorId: 0
+                creatorName: system
+                description: 成为店主可自购省钱又可分享赚钱
+                endDate: 1606406400000
+                followerInviteCode: '000000'
+                id: 35911
+                indexImg: http://img1.daling.com/zin/2018/06/11/13/21/FA163E0BD2F9I6BD1ML5ZJGHA9H.jpg_200x200.jpg
+                inviteCode: '1124587'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 知画的全球一手好物店
+                originalFollowerCode: '1117221'
+                originalFollowerName: 幽蓝
+                ownerId: 122910
+                pinkBlockoutYn: 1
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/zin/2017/11/27/FA163E0C4D3EHBRE0YHK6ISQ1DQ.jpg
+                sourceSn: '111733110500489843'
+                startDate: 1511712000000
+                status: 1
+                stewardType: 1
+            -   code: '111731008442925050'
+                comments: ' 2018-02-07 李庭轩初始化卡位粉钻标记为1初始化粉钻升级时间初始化粉钻升级时间'
+                createdDate: 1509929069817
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1604592000000
+                followerInviteCode: '000000'
+                id: 28546
+                indexImg: http://img.cdn.daling.com/zin/2017/11/07/FA163E0C4D3EHB7I0H32MJQDPQE.jpg_200x200.jpg
+                inviteCode: '1117221'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 幽蓝
+                originalFollowerCode: '1116971'
+                originalFollowerName: 程诗涵
+                ownerId: 67600
+                pinkBlockoutYn: 1
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '111731008442525041'
+                startDate: 1509897600000
+                status: 1
+                stewardType: 1
+            -   code: '121730716135079586'
+                comments: ' 2018-02-07 李庭轩初始化卡位粉钻标记为1初始化粉钻升级时间初始化粉钻升级时间'
+                createdDate: 1509696830488
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1604332800000
+                followerInviteCode: '1116953'
+                id: 28296
+                indexImg: http://img.cdn.daling.com/zin/2017/11/07/FA163E0BD2F9HB7I0HYB269NFMQ.jpg_200x200.jpg
+                inviteCode: '1116971'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 程诗涵
+                originalFollowerCode: '1116953'
+                originalFollowerName: BK
+                ownerId: 72818
+                pinkBlockoutYn: 1
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '121730716134579578'
+                startDate: 1509638400000
+                status: 1
+                stewardType: 2
+            -   code: '221730715230320333'
+                comments: ' 2018-02-07 李庭轩初始化卡位粉钻标记为1初始化粉钻升级时间初始化粉钻升级时间'
+                createdDate: 1509693783432
+                creatorId: 1040
+                creatorName: 王康
+                description: 欢迎光临小店
+                endDate: 1604332800000
+                followerInviteCode: '000000'
+                id: 28278
+                indexImg: http://img.cdn.daling.com/zin/2017/12/14/FA163E0C4D3EHCE42SN0MII6R09.jpg_200x200.jpg
+                inviteCode: '1116953'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: BK社群
+                originalFollowerCode: '0000000'
+                originalFollowerName: ''
+                ownerId: 72768
+                pinkBlockoutYn: 1
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: 王康, 2017-11-03 15:23:03.432, 空降店主:28278
+                startDate: 1509638400000
+                status: 1
+                stewardType: 1
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/shopperUntilCreatetime.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            createTime: '2019-01-01 10:10:10'
+            nextShopId: '76274'
+            pageSize: '3'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/shopperUntilCreatetime.do
+    validate:
+        expectData:
+            data:
+                data:
+                -   indexImg: http://img6.daling.com/zin/2018/06/04/19/48/FA163E0C4D3EI64J3QFGQ3KQ6EK.jpg_200x200.jpg
+                    realName: 陈桦
+                    shopId: 76275
+                    shopName: 小猛
+                    shopStatus: 1
+                    userId: 158856
+                -   indexImg: http://wx.qlogo.cn/mmopen/vi_32/iajicahVUQORQN6ZuBcKXZIuYEPPMEblick22WibCfodWQFzvQ9wlxyQsiaDH80SdficpqPUEYBia2GdiaDNicbd3mRAtog/132
+                    realName: 周丹
+                    shopId: 76276
+                    shopName: 周丹
+                    shopStatus: 1
+                    userId: 1048148
+                -   indexImg: http://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKpuN6Sj95ajBEaLKpVf7TOPqo0iap66R2L1q9Hew37MdmTPOpickvQpMZGibA4DUMy3MMBTdz9a5bWQ/132
+                    realName: 朱鸣
+                    shopId: 76277
+                    shopName: 珠珠
+                    shopStatus: 1
+                    userId: 1073249
+                next: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/rootShopByInviteCode.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            inviteCode: '1164950'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/rootShopByInviteCode.do
+    validate:
+        expectData:
+            message: 查询成功
+            retBool: true
+            t:
+                code: '171802118103677934'
+                comments: null
+                createdDate: 1516529436426
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1611158400000
+                followerInviteCode: '000000'
+                id: 75596
+                indexImg: http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er0CnNTxAMSO6FbnhZYd19a5lmJkmeFuOZOwLGHnKfOg2qoJkRE2byxP8jSoOK4VuwczwjjbNGvBA/132
+                inviteCode: '1164272'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 鑫瑶冻品，绿色磨坊
+                originalFollowerCode: '1163220'
+                originalFollowerName: 香港丝洛芬健康内衣总代理
+                ownerId: 1058323
+                pinkBlockoutYn: 0
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '181802118102938139'
+                startDate: 1516464000000
+                status: 1
+                stewardType: 1
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/getLinkFailureYnByInviteCode.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            inviteCode: '1164950'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/getLinkFailureYnByInviteCode.do
+    validate:
+        expectData:
+            data: 0
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/shop/countShops4Follower.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            beginDate: '1502208000000'
+            endDate: '1602208000000'
+            followerInviteCodes: '1164950'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/countShops4Follower.do
+    validate:
+        expectData:
+            data:
+                '1164950': 52
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200

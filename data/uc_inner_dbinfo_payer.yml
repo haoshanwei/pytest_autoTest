@@ -1,0 +1,48 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/dbinfo/payer/queryDefault.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            userId: '1007187'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/payer/queryDefault.do
+    validate:
+        expectData:
+            data:
+                createdDate: 1569562029627
+                defaultYn: 1
+                id: 1002
+                modiDate: 1569562029627
+                payerCardNo: QL0SD/O9FQn6aLre9dyDMDjkvZ1DvITv
+                payerName: 王敏
+                userId: 1007187
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/payer/queryPayerById.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.17.1
+        method: GET
+        params:
+            payerId: '1002'
+            userId: '1007187'
+        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/payer/queryPayerById.do
+    validate:
+        expectData:
+            data:
+                createdDate: 1569562029627
+                defaultYn: 1
+                id: 1002
+                modiDate: 1569562029627
+                payerCardNo: QL0SD/O9FQn6aLre9dyDMDjkvZ1DvITv
+                payerName: 王敏
+                userId: 1007187
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
