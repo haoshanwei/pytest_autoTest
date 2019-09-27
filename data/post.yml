@@ -15,7 +15,7 @@ testcases:
             Postman-Token: 31366e41-8d99-4e30-bae1-17d11c0481e7
             User-Agent: PostmanRuntime/7.15.2
         method: POST
-        url: http://a.xc.qa.daling.com/xc_uc/inner/manager/shop/updateShopName.do
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopName.do
     validate:
         expectData:
             data:

@@ -24,7 +24,7 @@ class TestUcenterInnerUc():
 
         url = UC_HOST + '/xc_uc/inner/uc/auth.do'
         res = requests.get(url, headers=dheaders)
-        src_data = {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': 'mahailin', "followerInviteCode": "1089725"}}
+        src_data = {'version': '1.0', 'status': 0, 'errorMsg': '全部成功', 'data': {'realName': '孟祥国', "followerInviteCode": "1089686"}}
 
         assert {} == res_diff(src_data, res.json())
 
