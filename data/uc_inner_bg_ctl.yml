@@ -64,7 +64,7 @@ testcases:
             User-Agent: PostmanRuntime/7.17.1
         method: GET
         params:
-            uids: '1037'
+            uids: '1028'
 #            uids: '1037'
         url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/batch_encrypt_uid.do
     validate:
