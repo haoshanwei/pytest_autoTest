@@ -3,7 +3,7 @@ sammary:
     host: ''
     name: testcase title
     proxies:
-#      http: 'http://127.0.0.1:8888'
+        #http: 'http://127.0.0.1:8888'
 testcases:
 -   name: /xc_uc/inner/manager/shop/updateShopName.do
     request:

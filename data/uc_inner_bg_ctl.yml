@@ -2,6 +2,8 @@ sammary:
     description: testcase description
     host: ''
     name: testcase title
+#    proxies:
+#          http: 'http://127.0.0.1:8888'
 testcases:
 -   name: /xc_uc/inner/bg/ctl/encrypt_uid.do
     request:
@@ -60,19 +62,24 @@ testcases:
         status_code: 200
 -   name: /xc_uc/inner/bg/ctl/batch_encrypt_uid.do
     request:
+        data:
+        - !!python/tuple
+            - uids
+            - '1028'
+        - !!python/tuple
+            - uids
+            - '1037'
         headers:
+            Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.17.1
-        method: GET
-        params:
-            uids: '1028'
-#            uids: '1037'
+        method: POST
         url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/batch_encrypt_uid.do
     validate:
         expectData:
             clientFrom: ''
             data:
                 '1028': '0400000600001040070106324'
-#                '1037': '0500000100001040070204284'
+                '1037': '0500000100001040070204284'
             errmsg: 全部成功
             get_url: ''
             status: 0
