@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pytest = "*"
+pytest-html = "*"
+allure-pytest = "*"
+cmp-dict = "*"
+pytest-xdist = "*"
+requests = "*"
+records = "*"
+redis = "==3.0.0"
+redis-py-cluster = "*"
+pyyaml = "*"
+pytest-rerunfailures = "*"
+
+[requires]
+python_version = "3.7"
