@@ -10,14 +10,14 @@
 # +--+--+--+--+--+--+--+--+--+--+--+--+--+
 #                        2019-09-18  09:53
 
-import os
 import pytest
 import requests
 from dutil.res_diff import res_diff
+from dutil.find_case import findCase
 from dutil.make_ddt import MakeDdt
 
 # 数据准备
-casepath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'uc_inner_dbinfo_user.yml')
+casepath = findCase(__file__, 'uc_inner_dbinfo_user.yml')
 test_cases = MakeDdt(casepath).makeData()
 # 数据准备
 

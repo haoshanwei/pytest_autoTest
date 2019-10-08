@@ -10,7 +10,6 @@
 # +--+--+--+--+--+--+--+--+--+--+--+--+--+
 #                        2019-09-17  15:19
 
-import pytest
 import requests
 from conf.sysconfig import UC_HOST
 
