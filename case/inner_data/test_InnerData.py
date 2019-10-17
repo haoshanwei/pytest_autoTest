@@ -16,18 +16,18 @@ from dutil.res_diff import res_diff
 from dutil.find_case import findCase
 from dutil.make_ddt import MakeDdt
 
-casepath = findCase(__file__, 'uc_inner_bg_ctl.yml')
+casepath = findCase(__file__, 'uc_inner_data.yml', n=2)
 test_cases = MakeDdt(casepath).makeData()
 
 
-class TestUcenterInnerBgCtl():
+class TestUcenterInnerData():
     '''
     基于 yaml 文件数据的自动化case
     '''
     @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
                              test_cases)
-    def test_inner_bg_ctl(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
-        '''/inner/bg/ctl/'''
+    def test_success(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
+        '''/inner/data/'''
         res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
 
         assert status_code == res.status_code

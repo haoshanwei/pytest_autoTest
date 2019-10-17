@@ -1,0 +1,73 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/invite/queryInviteRecords.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            beginId: '76271'
+            endId: '76274'
+        url: http://atxc.beta.daling.com/xc_uc/inner/invite/queryInviteRecords.do
+    validate:
+        expectData:
+            data:
+            -   assistYn: 1
+                createdDate: 1551150167431
+                id: 76272
+                modiDate: null
+                sourceOrderNo: null
+                sourceType: 0
+                sourceUserId: null
+                sourceUserName: null
+                userId: 12799212
+            -   assistYn: 1
+                createdDate: 1551150167431
+                id: 76273
+                modiDate: null
+                sourceOrderNo: null
+                sourceType: 0
+                sourceUserId: null
+                sourceUserName: null
+                userId: 2551618
+            -   assistYn: 1
+                createdDate: 1551150167431
+                id: 76274
+                modiDate: null
+                sourceOrderNo: null
+                sourceType: 0
+                sourceUserId: null
+                sourceUserName: null
+                userId: 9468188
+            errorMsg: 查询成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/invite/queryInviteRecordByUserId.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            userId: '498506'
+        url: http://atxc.beta.daling.com/xc_uc/inner/invite/queryInviteRecordByUserId.do
+    validate:
+        expectData:
+            data: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/invite/queryMaxId.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        url: http://atxc.beta.daling.com/xc_uc/inner/invite/queryMaxId.do
+    validate:
+        expectData:
+            data: 3001000
+            errorMsg: success
+            status: 0
+        status_code: 200

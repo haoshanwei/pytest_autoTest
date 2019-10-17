@@ -11,6 +11,7 @@
 #                        2019-09-17  14:31
 
 import pytest
+import requests
 from dutil.xc_auth import getUserHeaders
 from conf.sysconfig import UC_DB
 from conf.sysconfig import UC_HOST
@@ -32,3 +33,7 @@ def uc_db():
 @pytest.fixture(scope='session')
 def uc_redis():
     return UC_REDIS
+
+
+def user_queryById(request):
+    return requests.request(UC_HOST + '/xc_uc/inner/dbinfo/user/queryById.do?userId=%s' % request.param)

@@ -1,0 +1,86 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/device/queryByUids.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            uids: '[1964478,878243]'
+        url: http://atxc.beta.daling.com/xc_uc/inner/device/queryByUids.do
+    validate:
+        expectData:
+            data: []
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/device/loginedYn.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            uids: '[1964478,878243]'
+        url: http://atxc.beta.daling.com/xc_uc/inner/device/loginedYn.do
+    validate:
+        expectData:
+            data:
+                '1964478': true
+                '878243': true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/device/loginedYnNoLimit.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            userId: '1964478'
+        url: http://atxc.beta.daling.com/xc_uc/inner/device/loginedYnNoLimit.do
+    validate:
+        expectData:
+            message: 查询成功
+            retBool: true
+            t: true
+        status_code: 200
+-   name: /xc_uc/inner/device/firstAppLoginInfo.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            userId: '1964478'
+        url: http://atxc.beta.daling.com/xc_uc/inner/device/firstAppLoginInfo.do
+    validate:
+        expectData:
+            message: 查询成功
+            retBool: true
+            t:
+                appToken: null
+                createdDate: 1528163220844
+                deviceId: '861504030910995'
+                expireTime: 1574403793000
+                expireYn: 1
+                id: 286955
+                loginTime: 1528429749185
+                platform: android
+                userId: 1964478
+        status_code: 200
+-   name: /xc_uc/inner/device/hasLoginedApp.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            userId: '1964478'
+        url: http://atxc.beta.daling.com/xc_uc/inner/device/hasLoginedApp.do
+    validate:
+        expectData:
+            message: null
+            retBool: false
+            t: true
+        status_code: 200

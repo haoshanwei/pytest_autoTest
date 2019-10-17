@@ -1,0 +1,99 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/uc/queryById.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            uid: '1964478'
+        url: http://atxc.beta.daling.com/xc_uc/inner/uc/queryById.do
+    validate:
+        expectData:
+            data:
+                ctime: 1521335552136
+                followerInviteCode: '1211194'
+                headimgUrl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIej063rpdVzRqGmktDSmGaKlt3n4RjVFRRZPrdHVe48DsJbQkgH7ia84QEI9jffhQ3NYzzOkFKY2A/132
+                id: 1964478
+                inBacklistYn: null
+                mobile: '15147943808'
+                nickName: 阿木
+                realName: 孟根娜布其
+                shopId: 210861
+                shopStatus: 1
+                userType: 1
+                utoken: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/uc/queryByUserIds.do
+    request:
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            userIds: '1964478'
+        url: http://atxc.beta.daling.com/xc_uc/inner/uc/queryByUserIds.do
+    validate:
+        expectData:
+            data:
+            -   ctime: 1521335552136
+                followerInviteCode: '1211194'
+                headimgUrl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIej063rpdVzRqGmktDSmGaKlt3n4RjVFRRZPrdHVe48DsJbQkgH7ia84QEI9jffhQ3NYzzOkFKY2A/132
+                id: 1964478
+                mobile: '15147943808'
+                nickName: 阿木
+                realName: 孟根娜布其
+                shopFollowerInviteCode: '1211194'
+                shopId: 210861
+                shopStatus: 1
+                userType: 1
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/uc/queryByMobile.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            mobile: '15058116480'
+        url: http://atxc.beta.daling.com/xc_uc/inner/uc/queryByMobile.do
+    validate:
+        expectData:
+            data:
+                ctime: 1515721303519
+                followerInviteCode: '1140578'
+                headimgUrl: http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erKTkibeqqOvMsYF05gV0ZxtskL2nkic1SMD5klsLeL7aNCnVjwiaGUGksVsBYt7fELLf0W6UBmaibzsA/132
+                id: 878243
+                inBacklistYn: null
+                mobile: '15058116480'
+                nickName: 小酒窝
+                realName: 李萍
+                shopId: 202860
+                shopStatus: 1
+                userType: 1
+                utoken: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/uc/logoutUser.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            userId: '1050'
+        url: http://atxc.beta.daling.com/xc_uc/inner/uc/logoutUser.do
+    validate:
+        expectData:
+            data:
+                message: 清空APP登录信息成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200

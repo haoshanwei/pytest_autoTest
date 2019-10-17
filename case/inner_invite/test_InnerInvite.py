@@ -16,18 +16,18 @@ from dutil.res_diff import res_diff
 from dutil.find_case import findCase
 from dutil.make_ddt import MakeDdt
 
-casepath = findCase(__file__, 'post.yml')
-app_stock_cases = MakeDdt(casepath).makeData()
+casepath = findCase(__file__, 'uc_inner_invite.yml', n=2)
+test_cases = MakeDdt(casepath).makeData()
 
 
-class TestUcenterInnerManagerShop():
+class TestUcenterInnerInvite():
     '''
     基于 yaml 文件数据的自动化case
     '''
     @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
-                             app_stock_cases)
-    def test_(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
-        '''库存系统-测试一个 POST 的栗子'''
+                             test_cases)
+    def test_success(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
+        '''/inner/invite'''
         res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
 
         assert status_code == res.status_code

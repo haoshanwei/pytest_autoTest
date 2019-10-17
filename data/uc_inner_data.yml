@@ -1,0 +1,203 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/data/findVipCountByInviteCode.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            beginDate: '2017-10-01 10:00:00'
+            endDate: '2018-11-01 10:00:00'
+            inviteCodes: '1164950'
+        url: http://atxc.beta.daling.com/xc_uc/inner/data/findVipCountByInviteCode.do
+    validate:
+        expectData:
+            data:
+            -   count: 3
+                inviteCode: '1164950'
+                vipRegisterTime: '2018-08-27 22:02:17.845'
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/data/queryUserBaseInfo.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            id: '1964478'
+            mobile: '15147943808'
+        url: http://atxc.beta.daling.com/xc_uc/inner/data/queryUserBaseInfo.do
+    validate:
+        expectData:
+            data:
+                appOpenid: null
+                appToken: 1002015-13196-afd2c570-2a3a-4bb2-9070-95edeac1c2df
+                appid: wx93b8db3091282dc6
+                cardNo: null
+                certificationYn: 0
+                changeInviteCodeTimes: 0
+                city: 锡林郭勒
+                comments: null
+                country: 中国
+                createdDate: 1521335552136
+                creatorId: 0
+                creatorName: system
+                deviceId: '864619047002433'
+                followerInviteCode: '1211194'
+                headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIej063rpdVzRqGmktDSmGaKlt3n4RjVFRRZPrdHVe48DsJbQkgH7ia84QEI9jffhQ3NYzzOkFKY2A/132
+                id: 1964478
+                inBacklistYn: null
+                lastAddressId: 632831
+                lastPayerId: null
+                loginForbiddenYn: null
+                loginToast: null
+                maxPayerInfoNum: 20
+                maxReceiveAddressNum: 20
+                mngSession: null
+                mobile: '15147943808'
+                modiDate: 1557732391681
+                modifierId: null
+                modifierName: null
+                nickName: 阿木
+                openid: oolsO0UfADGm2JGS3_heipJBIXZs
+                originMobile: null
+                payPwd: 49d3068f5c706ef6e0010efe0ba0d32e
+                platform: android
+                province: 内蒙古
+                realName: 孟根娜布其
+                sessionKey: DYxyKsCIjsA+iH5b+k5wag==
+                sex: 2
+                shopRegisterTime: 1528162525000
+                showMobileYn: 1
+                status: 1
+                subscribeTime: null
+                subscribeYn: 0
+                thirdSession: 1002016-30829-3539b5b8-13f7-4457-9b48-2b6000945a9b
+                touchAppid: wxb570b8449a705308
+                touchOpenid: oP_LWwuTXkJEed0bcfiirD1LSJbI
+                unionid: o0RMh0-hINXVVWsvxEiF2mEj8HRo
+                unsubscribeTime: null
+                userType: 1
+                vipRegisterTime: null
+                wechatId: null
+                wechatIdQrcode: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/data/queryAllShopInfoByMobile.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            mobile: '15147943808'
+        url: http://atxc.beta.daling.com/xc_uc/inner/data/queryAllShopInfoByMobile.do
+    validate:
+        expectData:
+            data: null
+            errorMsg: 系统繁忙，请稍后再试
+            status: 599
+        status_code: 200
+-   name: /xc_uc/inner/data/inviteVipInfo.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            inviteVipInfoParam: ''
+        url: http://atxc.beta.daling.com/xc_uc/inner/data/inviteVipInfo.do
+    validate:
+        expectData:
+            data:
+                count: 0
+                userList: []
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/data/community/list.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            inviteCode: '1089693'
+        url: http://atxc.beta.daling.com/xc_uc/inner/data/community/list.do
+    validate:
+        expectData:
+            data:
+                currPageNo: 1
+                items:
+                -   headImgUrl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKHF6WGcmlhyuAFeFiaZfumqkH3MHdyp5EgWSVLHZEPGk7vKe7kFFtOPpQOicY8Xbs5dbFVuWudaVFQ/132
+                    id: 2006
+                    mobile: '15776727246'
+                    nickName: 奥
+                    realName: 张宁
+                    recruitCount: 0
+                    recruitLevel: 0
+                    userstatus: 1
+                -   headImgUrl: http://thirdwx.qlogo.cn/mmopen/vi_32/kbfN1Pvr5rZ5FbPDwCGvm54EUJFvPOyQhkj0N3T6Hj4CUicbm4GJYVibjFu5VD5QqYob0QYv8RuwF2NtS2kxEzGQ/132
+                    id: 27706
+                    mobile: '18611572488'
+                    nickName: 达令测试账号
+                    realName: 孟祥国测试
+                    recruitCount: 0
+                    recruitLevel: 0
+                    userstatus: 1
+                -   headImgUrl: http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqEDRAXOo8fEl0tJBLjJvbOfxBylBKNOKXnSEDsicbM1ey7HNQ0Em2IQPzb64g4j3NticIRicNCmapEQ/132
+                    id: 2024
+                    mobile: '18210373413'
+                    nickName: 因
+                    realName: 周凤岚
+                    recruitCount: 29
+                    recruitLevel: 0
+                    userstatus: 1
+                -   headImgUrl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL7nbF0llCZTBzpt1Cbv65q4Q5VjubMcWgibvEkL8PNkJuCYX84pfUwb3wEuR7UDF4Qf4zRYjRoOeQ/132
+                    id: 956993
+                    mobile: '13361152767'
+                    nickName: WIND
+                    realName: 王保峰
+                    recruitCount: 0
+                    recruitLevel: 0
+                    userstatus: 1
+                nextIndex: 0
+                pageSize: 30
+                previousIndex: 0
+                startIndex: 0
+                totalCount: 4
+                totalPages: 1
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/data/community/total.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            inviteCode: '1089693'
+        url: http://atxc.beta.daling.com/xc_uc/inner/data/community/total.do
+    validate:
+        expectData:
+            data:
+                total: 33
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/data/recruitedShopsByShopId.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            shopId: '76274'
+        url: http://atxc.beta.daling.com/xc_uc/inner/data/recruitedShopsByShopId.do
+    validate:
+        expectData:
+            data: 52
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200

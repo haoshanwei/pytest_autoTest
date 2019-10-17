@@ -1,0 +1,457 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/manager/shop/updateShopDesc.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            shopDesc: 欢迎光临小店，测试1
+            shopId: '1031'
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopDesc.do
+    validate:
+        expectData:
+            data:
+                message: 店铺描述更新成功
+                success: false
+            errorMsg: 店铺描述更新成功
+            status: 500
+        status_code: 200
+-   name: /xc_uc/inner/manager/shop/updateShopIndexImg.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            shopId: '1021'
+            shopIndexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopIndexImg.do
+    validate:
+        expectData:
+            data:
+                message: 店铺头像更新成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/shop/updateShopImg.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            shopId: '1021'
+            shopImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopImg.do
+    validate:
+        expectData:
+            data:
+                message: 店招图片更新成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/shop/updateMobileAndRealName.do
+    request:
+        data:
+            mobile: '13601338766'
+            realName: 尤海云
+            shopOwnerId: '1050'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateMobileAndRealName.do
+    validate:
+        expectData:
+            data: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/shop/updateShopName.do
+    request:
+        data:
+            shopId: '588975'
+            shopName: A环境
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopName.do
+    validate:
+        expectData:
+            data:
+                message: 店铺名称更新成功
+                success: false
+            errorMsg: 店铺名称更新成功
+            status: 500
+        status_code: 200
+-   name: /xc_uc/inner/manager/shop/updateShopClose.do
+    request:
+        data:
+            linkFailureYn: '1'
+            loginForbiddenYn: '1'
+            loginToast: 测试禁止登录
+            userId: '1043'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopClose.do
+    validate:
+        expectData:
+            data: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/shop/queryShops.do
+    request:
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            beginId: '1008'
+            endId: '1019'
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/queryShops.do
+    validate:
+        expectData:
+            data:
+            -   code: '111722122201848238'
+                comments: null
+                createdDate: 1502288418370
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089679'
+                id: 1008
+                indexImg: https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eokHNcRJTzwJDn44FvaeLoLEDh1c51HDtTlbhM5o1jSIukIhsLNI2QnOib4QKMiapa4KEV5gb6eXAyQ/0
+                inviteCode: '1089680'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: Jack 孟
+                originalFollowerCode: '1089679'
+                originalFollowerName: 大个
+                ownerId: 1012
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '111722122201148225'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '111722122221248245'
+                comments: null
+                createdDate: 1502288532235
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089679'
+                id: 1009
+                indexImg: https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJF8g6VG6Eb73gOhibmIpqibV0llWDIR2ulR4VgaByptf6FAN0O3ibibF7pNibKmyIVxuicynMkxDkjyk9g/0
+                inviteCode: '1089681'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 东方
+                originalFollowerCode: '1089679'
+                originalFollowerName: 大个
+                ownerId: 1007
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '121722122220243742'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '111722122233548251'
+                comments: null
+                createdDate: 1502288615631
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089679'
+                id: 1010
+                indexImg: https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epmeqHLQOicylscl3m7rf92uX6RVeF2dvtdehgpo0Ugo4uUFQhQZeKMX3Vd0rOEYS2GAwgDLsiacRFg/0
+                inviteCode: '1089682'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: Leo
+                originalFollowerCode: '1089679'
+                originalFollowerName: 大个
+                ownerId: 1008
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '121722122232943750'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '121722122234643762'
+                comments: null
+                createdDate: 1502288626424
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089679'
+                id: 1011
+                indexImg: https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epPUs5JRNQoib5FWyYXSCKicvqJHX4GtFia0iatMkicHwUXnicMRItsQtrtan8vQ4zxxmLtjQsAT1WsbEqw/0
+                inviteCode: '1089683'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 🎉郭宇
+                originalFollowerCode: '1089679'
+                originalFollowerName: 大个
+                ownerId: 1014
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '111722122234248265'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '211722122441966907'
+                comments: 周20171118卡位粉钻2018-02-07 李庭轩初始化卡位粉钻标记为12018-02-07 李庭轩初始化卡位粉钻标记为1初始化粉钻升级时间初始化粉钻升级时间
+                createdDate: 1502289859222
+                creatorId: 1040
+                creatorName: 王康
+                description: 欢迎光临达令家
+                endDate: 1596902400000
+                followerInviteCode: '000000'
+                id: 1012
+                indexImg: http://img.cdn.daling.com/data/files/mobile/img/dalingjia.jpg_200x200.jpg
+                inviteCode: '1089684'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 达令家
+                originalFollowerCode: '0000000'
+                originalFollowerName: ''
+                ownerId: 1019
+                pinkBlockoutYn: 1
+                recruitLevel: 1
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/zin/2017/08/29/FA163E0BD2F9H8TA0SA8N148Z1O.jpg
+                sourceSn: 王康, 2017-08-09 22:44:19.222, 空降店主:1012
+                startDate: 1502208000000
+                status: 1
+                stewardType: 1
+            -   code: '111722122480448270'
+                comments: null
+                createdDate: 1502290084809
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089684'
+                id: 1013
+                indexImg: http://img.cdn.daling.com/zin/2017/08/29/FA163E0BD2F9H8TA1711P1IJSN3.jpg_200x200.jpg
+                inviteCode: '1089685'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 来吧朋友
+                originalFollowerCode: '1089684'
+                originalFollowerName: 大个
+                ownerId: 1021
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '121722122475843774'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '121722122490843791'
+                comments: null
+                createdDate: 1502290148645
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089684'
+                id: 1014
+                indexImg: http://img9.daling.com/zin/2018/06/14/19/39/FA163E0BD2F9I6EJ30IDSOB53BG.jpg_200x200.jpg
+                inviteCode: '1089686'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: Leo
+                originalFollowerCode: '1089684'
+                originalFollowerName: 大个
+                ownerId: 1023
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '121722122490343784'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '111722122522448296'
+                comments: null
+                createdDate: 1502290344906
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089685'
+                id: 1015
+                indexImg: http://img4.daling.com/zin/2019/05/20/11/34/FA163E0C4D3EJ5KB2MRPFM8JXQV.png_200x200.png
+                inviteCode: '1089687'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 疾风
+                originalFollowerCode: '1089685'
+                originalFollowerName: long
+                ownerId: 1024
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img2.daling.com/zin/2019/05/20/11/35/FA163E0C4D3EJ5KB2QR7XMGLCO4.png
+                sourceSn: '111722122521848280'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '111722122533348303'
+                comments: null
+                createdDate: 1502290413072
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089685'
+                id: 1016
+                indexImg: http://img2.daling.com/zin/2019/03/22/17/51/1418774884DEJ3MH3Z5PHDG7H0M.jpg_200x200.jpg
+                inviteCode: '1089688'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 混子
+                originalFollowerCode: '1089685'
+                originalFollowerName: long
+                ownerId: 1026
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '121722122532943815'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '111722122541148315'
+                comments: null
+                createdDate: 1502290451478
+                creatorId: 0
+                creatorName: system
+                description: 欢迎光临小店
+                endDate: 1596902400000
+                followerInviteCode: '1089684'
+                id: 1017
+                indexImg: http://img.cdn.daling.com/zin/2017/11/07/FA163E0C4D3EHB7H2W0094DD0IL.jpg_200x200.jpg
+                inviteCode: '1089689'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 阿康的小店
+                originalFollowerCode: '1089684'
+                originalFollowerName: 大个
+                ownerId: 1022
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img.cdn.daling.com/data/files/mobile/img/diaozhao1.jpeg
+                sourceSn: '121722122540343826'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            -   code: '121722123064043842'
+                comments: null
+                createdDate: 1502291200555
+                creatorId: 0
+                creatorName: system
+                description: 床前明月光
+                endDate: 1596902400000
+                followerInviteCode: '1089686'
+                id: 1018
+                indexImg: http://img.cdn.daling.com/zin/2017/08/29/FA163E0BD2F9H8TM3UX5JIZMFLS.jpg_200x200.jpg
+                inviteCode: '1089690'
+                linkFailureYn: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                name: 小兵兵
+                originalFollowerCode: '1089686'
+                originalFollowerName: Leo
+                ownerId: 1025
+                pinkBlockoutYn: 0
+                recruitLevel: 0
+                salesLevel: 0
+                selectedSwitch: null
+                shareImg: http://img.cdn.daling.com/data/files/mobile/img/dianpufenxiang.jpg
+                shopImg: http://img9.daling.com/zin/2018/12/02/20/11/14187746A583IC2K0UO0OMICDRN.png
+                sourceSn: '121722123063543834'
+                startDate: 1502208000000
+                status: 1
+                stewardType: null
+            errorMsg: 查询成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/shop/queryMaxId.do
+    request:
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/queryMaxId.do
+    validate:
+        expectData:
+            data: 1820622
+            errorMsg: success
+            status: 0
+        status_code: 200

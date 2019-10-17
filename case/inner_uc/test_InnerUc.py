@@ -14,7 +14,11 @@ import pytest
 import requests
 from dutil.res_diff import res_diff
 from conf.sysconfig import UC_HOST
+from dutil.find_case import findCase
+from dutil.make_ddt import MakeDdt
 
+casepath = findCase(__file__, 'uc_inner_uc.yml', n=2)
+test_cases = MakeDdt(casepath).makeData()
 
 class TestUcenterInnerUc():
 
@@ -28,3 +32,14 @@ class TestUcenterInnerUc():
 
         assert {} == res_diff(src_data, res.json())
 
+    '''
+    基于 yaml 文件数据的自动化case
+    '''
+    @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
+                             test_cases)
+    def test_test_success(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
+        '''/inner/uc'''
+        res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
+
+        assert status_code == res.status_code
+        assert {} == res_diff(expectData, res.json())

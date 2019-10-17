@@ -1,0 +1,274 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_uc/inner/manager/user/updateEncryptPayPwd.do
+    request:
+        data:
+            encryptPayPwd: 44eded5b97390d41d0301e6f1d2491be
+            userId: '1181'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateEncryptPayPwd.do
+    validate:
+        expectData:
+            data:
+                message: 用户不存在
+                success: false
+            errorMsg: 用户不存在
+            status: 500
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/updateLastUsedAddressId.do
+    request:
+        data:
+            addressId: '491693'
+            userId: '1050'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateLastUsedAddressId.do
+    validate:
+        expectData:
+            data:
+                message: 更新地址成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/maxReceiveAddressNumber.do
+    request:
+        data:
+            maxReceiveAddressNumber: '21'
+            userId: '1050'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/maxReceiveAddressNumber.do
+    validate:
+        expectData:
+            data:
+                message: 更新成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/updateFollowerInviteCode.do
+    request:
+        data:
+            followerInviteCode: '9089694'
+            userId: '1050'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateFollowerInviteCode.do
+    validate:
+        expectData:
+            data:
+                message: 操作成功
+                success: false
+            errorMsg: 操作成功
+            status: 500
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/updateMobile.do
+    request:
+        data:
+            mobile: '13601338766'
+            userId: '1050'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateMobile.do
+    validate:
+        expectData:
+            data:
+                message: 手机号已变更，请勿重复操作
+                success: false
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/updateLastUsedPayerId.do
+    request:
+        data:
+            payerId: '1001'
+            userId: '1007187'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateLastUsedPayerId.do
+    validate:
+        expectData:
+            data:
+                message: 更新支付人信息成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/maxPayerInfoNumber.do
+    request:
+        data:
+            maxPayerInfoNumber: '10'
+            userId: '1007187'
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/maxPayerInfoNumber.do
+    validate:
+        expectData:
+            data:
+                message: 更新成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/updateBackListYn.do
+    request:
+        data:
+            userId: '1050'
+            yn: Y
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: POST
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateBackListYn.do
+    validate:
+        expectData:
+            data:
+                message: 更新成功
+                success: true
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/queryUserBrowse.do
+    request:
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            shopOwnerId: '1050'
+            type: '1'
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/queryUserBrowse.do
+    validate:
+        expectData:
+            data:
+                currPageNo: 1
+                items:
+                -   headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJMHOCOglWIDI5KdkUicrqnJd4dTvGpk8lbHCSWV6f57WZY77kKMy8FsE4iaPJ4lU7t3Ticwjl6dJ8pA/132
+                    id: 4263860
+                    inviterName: 'Sophia '
+                    mobile: 136****8673
+                    nickname: 陈丽
+                    showmobileyn: N
+                    time: 1559260466627
+                    unionid: o0RMh091PBg-QaTcloC1UVFLkEAc
+                    userid: 4263860
+                    userstatus: 1
+                    usertype: 3
+                    wechatId: ''
+                -   headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJvAtdfJPYjI5aRibicUvgdR2A9lhb7P0qmHWnop3f7PQtraRicgyrMyvfhcq8a1zsdHsTutmuXQFbYQ/132
+                    id: 3697081
+                    inviterName: 'Sophia '
+                    mobile: 176****6829
+                    nickname: Lilyana
+                    showmobileyn: N
+                    time: 1550097119375
+                    unionid: o0RMh07EDSB_TMxxeXudjLBwapoo
+                    userid: 3697081
+                    userstatus: 1
+                    usertype: 3
+                    wechatId: ''
+                -   headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/EK8FZ09JfUKt5X0NJmowAbotgIIxw6stpgFW3iceUP8FdvSgJdtMwK8QWh3QOXPVSBTiaLasV2xCI8ULH2SshgFw/132
+                    id: 1502685
+                    inviterName: 'Sophia '
+                    mobile: 138****9026
+                    nickname: 千千
+                    showmobileyn: N
+                    time: 1538033157665
+                    unionid: o0RMh09RaPU-Y-SrgtztMv7_I_NQ
+                    userid: 1502685
+                    userstatus: 1
+                    usertype: 3
+                    wechatId: ''
+                nextIndex: 0
+                pageSize: 30
+                previousIndex: 0
+                startIndex: 0
+                totalCount: 3
+                totalPages: 1
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/manager/user/sourceUser.do
+    request:
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.18.0
+        method: GET
+        params:
+            userId: '11791065'
+        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/sourceUser.do
+    validate:
+        expectData:
+            data:
+                appOpenid: null
+                appToken: null
+                appid: null
+                cardNo: null
+                certificationYn: 0
+                changeInviteCodeTimes: 0
+                city: 商丘
+                comments: null
+                country: 中国
+                createdDate: 1543468429422
+                creatorId: 0
+                creatorName: system
+                deviceId: null
+                followerInviteCode: '2046586'
+                headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/0Hu9u4D7pXy382Hvzjx2hVibUqSpSOokDJ53PZuo7Jl1JVynoLiccljiciccnFDZmqjzibzAcSj1rCyl3iaNqlByebFQ/132
+                id: 11791065
+                inBacklistYn: 0
+                lastAddressId: null
+                lastPayerId: null
+                loginForbiddenYn: null
+                loginToast: null
+                maxPayerInfoNum: 10
+                maxReceiveAddressNum: 10
+                mngSession: null
+                mobile: null
+                modiDate: null
+                modifierId: null
+                modifierName: null
+                nickName: 雪花
+                openid: null
+                originMobile: null
+                payPwd: null
+                platform: wxtouch
+                province: 河南
+                realName: null
+                sessionKey: null
+                sex: 2
+                showMobileYn: 1
+                status: 1
+                subscribeTime: null
+                subscribeYn: 0
+                thirdSession: 1002012-28428-0a0ecdb8-91ff-4e20-9a7d-29cbaead0629
+                touchAppid: wxb570b8449a705308
+                touchOpenid: oP_LWwgY390kE3Emsr9gTLG5TpSQ
+                unionid: o0RMh037oHYFs75wjzTdaPY4bixM
+                unsubscribeTime: null
+                userType: 2
+                vipRegisterTime: null
+                wechatId: null
+                wechatIdQrcode: null
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
