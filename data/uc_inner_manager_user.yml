@@ -3,42 +3,6 @@ sammary:
     host: ''
     name: testcase title
 testcases:
--   name: /xc_uc/inner/manager/user/updateEncryptPayPwd.do
-    request:
-        data:
-            encryptPayPwd: 44eded5b97390d41d0301e6f1d2491be
-            userId: '1181'
-        headers:
-            Content-Type: application/x-www-form-urlencoded
-            User-Agent: PostmanRuntime/7.18.0
-        method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateEncryptPayPwd.do
-    validate:
-        expectData:
-            data:
-                message: 用户不存在
-                success: false
-            errorMsg: 用户不存在
-            status: 500
-        status_code: 200
--   name: /xc_uc/inner/manager/user/updateLastUsedAddressId.do
-    request:
-        data:
-            addressId: '491693'
-            userId: '1050'
-        headers:
-            Content-Type: application/x-www-form-urlencoded
-            User-Agent: PostmanRuntime/7.18.0
-        method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateLastUsedAddressId.do
-    validate:
-        expectData:
-            data:
-                message: 更新地址成功
-                success: true
-            errorMsg: 全部成功
-            status: 0
-        status_code: 200
 -   name: /xc_uc/inner/manager/user/maxReceiveAddressNumber.do
     request:
         data:

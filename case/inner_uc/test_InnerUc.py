@@ -32,9 +32,7 @@ class TestUcenterInnerUc():
 
         assert {} == res_diff(src_data, res.json())
 
-    '''
-    基于 yaml 文件数据的自动化case
-    '''
+
     @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
                              test_cases)
     def test_test_success(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):

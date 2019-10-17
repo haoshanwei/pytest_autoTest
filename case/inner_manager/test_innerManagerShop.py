@@ -11,31 +11,55 @@
 #                        2019-09-18  09:53
 
 import pytest
+import random
 import requests
 from dutil.res_diff import res_diff
 from dutil.find_case import findCase
 from dutil.make_ddt import MakeDdt
 from conf.sysconfig import UC_HOST
+from util.common import ranstr, queryUserById, queryShopById
 
 casepath = findCase(__file__, 'uc_inner_manager_shop.yml', n=2)
 app_stock_cases = MakeDdt(casepath).makeData()
 
 
 class TestUcenterInnerManagerShop():
-    '''
-        测试更新与数据库对比的情况
-        '''
 
-    def test_updateShopName(self, uc_db):
+    def test_updateShopName(self):
         '''更新用户店铺头像'''
         url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopName.do'
         shopId = 588975
-        shopName = '孟祥国A环境'
+        shopName = ranstr(4)
         params = dict(shopId=shopId, shopName=shopName)
-
         requests.request('POST', url, params=params)
-        db_shopName = uc_db.query("select name from t_shop where id = {}".format(shopId)).first().name
-        assert shopName == db_shopName
+
+        res = queryShopById(shopId)
+        assert shopName == res['data']['name']
+
+
+    def test_updateEncryptPayPwd(self):
+        '''更新用户店铺头像'''
+        url = UC_HOST + '/xc_uc/inner/manager/user/updateEncryptPayPwd.do'
+        userId = 1151
+        encryptPayPwd = ranstr(15)
+        params = dict(userId=userId, encryptPayPwd=encryptPayPwd)
+        requests.request('POST', url, params=params)
+
+        res = queryUserById(userId)
+        assert encryptPayPwd == res['data']['payPwd']
+
+
+    def test_updateLastUsedAddressId(self):
+        '''更新用户店铺头像'''
+        url = UC_HOST + '/xc_uc/inner/manager/user/updateLastUsedAddressId.do'
+        userId = 1050
+        addressId = random.choice([491693, 491558, 887013, 2266, 561916])
+        params = dict(userId=userId, addressId=addressId)
+        requests.request('POST', url, params=params)
+
+        res = queryUserById(userId)
+        assert addressId == res['data']['lastAddressId']
+
 
     '''
     基于 yaml 文件数据的自动化case
