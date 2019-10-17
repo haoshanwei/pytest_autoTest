@@ -71,24 +71,6 @@ testcases:
             errorMsg: 全部成功
             status: 0
         status_code: 200
--   name: /xc_uc/inner/manager/shop/updateShopName.do
-    request:
-        data:
-            shopId: '588975'
-            shopName: A环境
-        headers:
-            Content-Type: application/x-www-form-urlencoded
-            User-Agent: PostmanRuntime/7.18.0
-        method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopName.do
-    validate:
-        expectData:
-            data:
-                message: 店铺名称更新成功
-                success: false
-            errorMsg: 店铺名称更新成功
-            status: 500
-        status_code: 200
 -   name: /xc_uc/inner/manager/shop/updateShopClose.do
     request:
         data:
