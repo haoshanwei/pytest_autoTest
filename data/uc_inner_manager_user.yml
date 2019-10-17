@@ -182,57 +182,6 @@ testcases:
         url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/sourceUser.do
     validate:
         expectData:
-            data:
-                appOpenid: null
-                appToken: null
-                appid: null
-                cardNo: null
-                certificationYn: 0
-                changeInviteCodeTimes: 0
-                city: 商丘
-                comments: null
-                country: 中国
-                createdDate: 1543468429422
-                creatorId: 0
-                creatorName: system
-                deviceId: null
-                followerInviteCode: '2046586'
-                headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/0Hu9u4D7pXy382Hvzjx2hVibUqSpSOokDJ53PZuo7Jl1JVynoLiccljiciccnFDZmqjzibzAcSj1rCyl3iaNqlByebFQ/132
-                id: 11791065
-                inBacklistYn: 0
-                lastAddressId: null
-                lastPayerId: null
-                loginForbiddenYn: null
-                loginToast: null
-                maxPayerInfoNum: 10
-                maxReceiveAddressNum: 10
-                mngSession: null
-                mobile: null
-                modiDate: null
-                modifierId: null
-                modifierName: null
-                nickName: 雪花
-                openid: null
-                originMobile: null
-                payPwd: null
-                platform: wxtouch
-                province: 河南
-                realName: null
-                sessionKey: null
-                sex: 2
-                showMobileYn: 1
-                status: 1
-                subscribeTime: null
-                subscribeYn: 0
-                thirdSession: 1002012-28428-0a0ecdb8-91ff-4e20-9a7d-29cbaead0629
-                touchAppid: wxb570b8449a705308
-                touchOpenid: oP_LWwgY390kE3Emsr9gTLG5TpSQ
-                unionid: o0RMh037oHYFs75wjzTdaPY4bixM
-                unsubscribeTime: null
-                userType: 2
-                vipRegisterTime: null
-                wechatId: null
-                wechatIdQrcode: null
             errorMsg: 全部成功
             status: 0
         status_code: 200
