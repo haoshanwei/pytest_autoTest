@@ -16,7 +16,7 @@ from dutil.res_diff import res_diff
 from dutil.find_case import findCase
 from dutil.make_ddt import MakeDdt
 
-casepath = findCase(__file__, 'uc_inner_device.yml', n=2)
+casepath = findCase(__file__, 'uc_inner_manager_user.yml', n=2)
 test_cases = MakeDdt(casepath).makeData()
 
 class TestInnerManagerUser():
