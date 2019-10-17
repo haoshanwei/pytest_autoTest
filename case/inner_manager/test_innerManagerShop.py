@@ -26,7 +26,7 @@ app_stock_cases = MakeDdt(casepath).makeData()
 class TestUcenterInnerManagerShop():
 
     def test_updateShopName(self):
-        '''更新用户店铺头像'''
+        '''更新用户店铺名称'''
         url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopName.do'
         shopId = 588975
         shopName = ranstr(4)
@@ -38,7 +38,7 @@ class TestUcenterInnerManagerShop():
 
 
     def test_updateEncryptPayPwd(self):
-        '''更新用户店铺头像'''
+        '''更新用户店铺密码'''
         url = UC_HOST + '/xc_uc/inner/manager/user/updateEncryptPayPwd.do'
         userId = 1151
         encryptPayPwd = ranstr(15)
@@ -50,7 +50,7 @@ class TestUcenterInnerManagerShop():
 
 
     def test_updateLastUsedAddressId(self):
-        '''更新用户店铺头像'''
+        '''更新用户最后使用的地址id'''
         url = UC_HOST + '/xc_uc/inner/manager/user/updateLastUsedAddressId.do'
         userId = 1050
         addressId = random.choice([491693, 491558, 887013, 2266, 561916])
