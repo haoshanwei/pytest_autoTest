@@ -64,7 +64,7 @@ class TestUcenterInnerManagerShop():
 
 
     def test_manager_shop_updateShopImg(self):
-        '''/xc_uc/inner/manager/shop/updateShopIndexImg.do'''
+        '''/xc_uc/inner/manager/shop/updateShopImg.do'''
         url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopImg.do'
         shopId = 1021
         shopImg = random.choice(
