@@ -20,40 +20,6 @@ testcases:
             errorMsg: 店铺描述更新成功
             status: 500
         status_code: 200
--   name: /xc_uc/inner/manager/shop/updateShopIndexImg.do
-    request:
-        headers:
-            User-Agent: PostmanRuntime/7.18.0
-        method: GET
-        params:
-            shopId: '1021'
-            shopIndexImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopIndexImg.do
-    validate:
-        expectData:
-            data:
-                message: 店铺头像更新成功
-                success: true
-            errorMsg: 全部成功
-            status: 0
-        status_code: 200
--   name: /xc_uc/inner/manager/shop/updateShopImg.do
-    request:
-        headers:
-            User-Agent: PostmanRuntime/7.18.0
-        method: GET
-        params:
-            shopId: '1021'
-            shopImg: http://img5.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/updateShopImg.do
-    validate:
-        expectData:
-            data:
-                message: 店招图片更新成功
-                success: true
-            errorMsg: 全部成功
-            status: 0
-        status_code: 200
 -   name: /xc_uc/inner/manager/shop/updateMobileAndRealName.do
     request:
         data:
@@ -422,18 +388,5 @@ testcases:
                 status: 1
                 stewardType: null
             errorMsg: 查询成功
-            status: 0
-        status_code: 200
--   name: /xc_uc/inner/manager/shop/queryMaxId.do
-    request:
-        headers:
-            Content-Type: application/x-www-form-urlencoded
-            User-Agent: PostmanRuntime/7.18.0
-        method: GET
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/shop/queryMaxId.do
-    validate:
-        expectData:
-            data: 1820622
-            errorMsg: success
             status: 0
         status_code: 200

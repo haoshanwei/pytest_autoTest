@@ -24,6 +24,18 @@ app_stock_cases = MakeDdt(casepath).makeData()
 
 
 class TestUcenterInnerManagerShop():
+    '''
+    基于 yaml 文件数据的自动化case
+    '''
+    @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
+                             app_stock_cases)
+    def test_success(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
+        '''/inner/manager/shop'''
+        res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
+
+        assert status_code == res.status_code
+        assert {} == res_diff(expectData, res.json())
+
 
     def test_updateShopName(self):
         '''更新用户店铺名称'''
@@ -35,6 +47,34 @@ class TestUcenterInnerManagerShop():
 
         res = queryShopById(shopId)
         assert shopName == res['data']['name']
+
+
+    def test_manager_shop_updateShopIndexImg(self):
+        '''/xc_uc/inner/manager/shop/updateShopIndexImg.do'''
+        url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopIndexImg.do'
+        shopId = 1021
+        shopIndexImg = random.choice(
+            ["http://img0.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg",
+             "http://img1.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg"])
+        params = dict(shopId=shopId, shopIndexImg=shopIndexImg)
+        requests.request('POST', url, params=params)
+
+        res = queryShopById(shopId)
+        assert shopIndexImg == res['data']['indexImg']
+
+
+    def test_manager_shop_updateShopImg(self):
+        '''/xc_uc/inner/manager/shop/updateShopIndexImg.do'''
+        url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopImg.do'
+        shopId = 1021
+        shopImg = random.choice(
+            ["http://img2.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg",
+             "http://img3.daling.com/zin/2018/05/21/17/17/FA163E0BD2F9I5LH1BS0PI3PB40.jpg_200x200.jpg"])
+        params = dict(shopId=shopId, shopImg=shopImg)
+        requests.request('POST', url, params=params)
+
+        res = queryShopById(shopId)
+        assert shopImg == res['data']['shopImg']
 
 
     def test_updateEncryptPayPwd(self):
@@ -61,14 +101,11 @@ class TestUcenterInnerManagerShop():
         assert addressId == res['data']['lastAddressId']
 
 
-    '''
-    基于 yaml 文件数据的自动化case
-    '''
-    @pytest.mark.parametrize("method, url, params, data, headers, cookies, proxies, status_code, expectData",
-                             app_stock_cases)
-    def test_success(self, method, url, params, data, headers, cookies, proxies, status_code, expectData):
-        '''/inner/manager/shop'''
-        res = requests.request(method, url, params=params, data=data, headers=headers, cookies=cookies, proxies=proxies)
+    def test_manager_shop_queryMaxId(self, uc_db):
+        '''/xc_uc/inner/manager/shop/queryMaxId.do'''
+        url = UC_HOST + "/xc_uc/inner/manager/shop/queryMaxId.do"
+        res = requests.get(url)
 
-        assert status_code == res.status_code
-        assert {} == res_diff(expectData, res.json())
+        db_res = uc_db.query("select max(id) as id from t_shop")
+        assert 200 == res.status_code
+        assert db_res.one().id == res.json()['data']

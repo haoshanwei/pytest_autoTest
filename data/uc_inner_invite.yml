@@ -59,15 +59,3 @@ testcases:
             errorMsg: 全部成功
             status: 0
         status_code: 200
--   name: /xc_uc/inner/invite/queryMaxId.do
-    request:
-        headers:
-            User-Agent: PostmanRuntime/7.18.0
-        method: GET
-        url: http://atxc.beta.daling.com/xc_uc/inner/invite/queryMaxId.do
-    validate:
-        expectData:
-            data: 3001000
-            errorMsg: success
-            status: 0
-        status_code: 200

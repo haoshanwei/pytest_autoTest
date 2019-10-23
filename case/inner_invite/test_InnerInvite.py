@@ -12,6 +12,7 @@
 
 import pytest
 import requests
+from conf.sysconfig import UC_HOST
 from dutil.res_diff import res_diff
 from dutil.find_case import findCase
 from dutil.make_ddt import MakeDdt
@@ -32,3 +33,13 @@ class TestUcenterInnerInvite():
 
         assert status_code == res.status_code
         assert {} == res_diff(expectData, res.json())
+
+
+    def test_invite_queryMaxId(self, uc_db):
+        '''/xc_uc/inner/invite/queryMaxId.do'''
+        url = UC_HOST + "/xc_uc/inner/invite/queryMaxId.do"
+        res = requests.get(url)
+
+        db_res = uc_db.query("select max(id) as id from t_user_free_invite_record")
+        assert 200 == res.status_code
+        assert db_res.one().id == res.json()['data']
