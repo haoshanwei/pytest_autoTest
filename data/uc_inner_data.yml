@@ -2,6 +2,8 @@ sammary:
     description: testcase description
     host: ''
     name: testcase title
+#    proxies:
+#        http: 'http://127.0.0.1:8888'
 testcases:
 -   name: /xc_uc/inner/data/findVipCountByInviteCode.do
     request:
@@ -98,9 +100,15 @@ testcases:
         url: http://atxc.beta.daling.com/xc_uc/inner/data/queryAllShopInfoByMobile.do
     validate:
         expectData:
-            data: null
-            errorMsg: 系统繁忙，请稍后再试
-            status: 599
+            data:
+                inviteCode: '1299699'
+                shopList:
+                    - name: 娜布其
+                      status: 1
+                      endDate: 1622822400000
+                      startDate: 1528128000000
+            errorMsg: 全部成功
+            status: 0
         status_code: 200
 -   name: /xc_uc/inner/data/inviteVipInfo.do
     request:
