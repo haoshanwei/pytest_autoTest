@@ -23,7 +23,7 @@ casepath = findCase(__file__, 'uc_inner_uc.yml', n=2)
 test_cases = MakeDdt(casepath).makeData_V2()
 
 class TestUcenterInnerUc():
-
+    @allure.title("用户中心内部鉴权接口")
     @pytest.mark.parametrize("dheaders", ["18901060204"], indirect=True)
     def test_auth(self, dheaders):
         '''用户中心内部鉴权接口'''

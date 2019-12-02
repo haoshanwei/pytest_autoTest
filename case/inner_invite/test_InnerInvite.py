@@ -44,6 +44,7 @@ class TestUcenterInnerInvite():
         assert {} == res_diff(expectData, res.json())
 
 
+    @allure.title("查询最大 invite ID")
     def test_invite_queryMaxId(self, uc_db):
         '''/xc_uc/inner/invite/queryMaxId.do'''
         url = UC_HOST + "/xc_uc/inner/invite/queryMaxId.do"

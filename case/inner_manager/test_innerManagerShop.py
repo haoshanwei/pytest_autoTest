@@ -45,7 +45,7 @@ class TestUcenterInnerManagerShop():
         assert status_code == res.status_code
         assert {} == res_diff(expectData, res.json())
 
-
+    @allure.title("更新用户店铺名称")
     def test_updateShopName(self):
         '''更新用户店铺名称'''
         url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopName.do'
@@ -57,7 +57,7 @@ class TestUcenterInnerManagerShop():
         res = queryShopById(shopId)
         assert shopName == res['data']['name']
 
-
+    @allure.title("更新用户店铺index图片")
     def test_manager_shop_updateShopIndexImg(self):
         '''/xc_uc/inner/manager/shop/updateShopIndexImg.do'''
         url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopIndexImg.do'
@@ -72,6 +72,7 @@ class TestUcenterInnerManagerShop():
         assert shopIndexImg == res['data']['indexImg']
 
 
+    @allure.title("更新用户店铺图片")
     def test_manager_shop_updateShopImg(self):
         '''/xc_uc/inner/manager/shop/updateShopImg.do'''
         url = UC_HOST + '/xc_uc/inner/manager/shop/updateShopImg.do'
@@ -86,6 +87,7 @@ class TestUcenterInnerManagerShop():
         assert shopImg == res['data']['shopImg']
 
 
+    @allure.title("更新用户店铺密码")
     def test_updateEncryptPayPwd(self):
         '''更新用户店铺密码'''
         url = UC_HOST + '/xc_uc/inner/manager/user/updateEncryptPayPwd.do'
@@ -98,6 +100,7 @@ class TestUcenterInnerManagerShop():
         assert encryptPayPwd == res['data']['payPwd']
 
 
+    @allure.title("更新用户最后使用的地址id")
     def test_updateLastUsedAddressId(self):
         '''更新用户最后使用的地址id'''
         url = UC_HOST + '/xc_uc/inner/manager/user/updateLastUsedAddressId.do'
@@ -110,6 +113,7 @@ class TestUcenterInnerManagerShop():
         assert addressId == res['data']['lastAddressId']
 
 
+    @allure.title("查询最大 shop ID")
     def test_manager_shop_queryMaxId(self, uc_db):
         '''/xc_uc/inner/manager/shop/queryMaxId.do'''
         url = UC_HOST + "/xc_uc/inner/manager/shop/queryMaxId.do"
