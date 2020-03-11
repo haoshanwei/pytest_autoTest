@@ -35271,71 +35271,6 @@ testcases:
             errorMsg: 全部成功
             status: 0
         status_code: 200
--   name: /xc_uc/inner/dbinfo/user/queryByTouchOpenid.do
-    request:
-        headers:
-            Content-Type: application/x-www-form-urlencoded
-            User-Agent: PostmanRuntime/7.17.1
-        method: GET
-        params:
-            touchOpenid: oP_LWwuNQNsg9ZMlyogUzaQPz-ZM
-        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByTouchOpenid.do
-    validate:
-        expectData:
-            data:
-                appOpenid: o_KJ5wa02N7bPrGHeHNrOSOSYkCQ
-                appToken: 1002016-23410-2c67c152-aa08-420f-9249-8400bf9aa836
-                appid: null
-                cardNo: null
-                certificationYn: 0
-                changeInviteCodeTimes: 0
-                city: 忻州
-                comments: null
-                country: CN
-                createdDate: 1554856043702
-                creatorId: 0
-                creatorName: system
-                deviceId: '867779037276129'
-                followerInviteCode: '1770366'
-                headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoUYVZcn5v2PnicnFtPKpfUILKbe5woXvkMaia0VuwBUNbQLaWjBz50XL4oxcQ5rf7DcPanopg54pvw/132
-                id: 16713745
-                inBacklistYn: 0
-                lastAddressId: 5139515
-                lastPayerId: null
-                loginForbiddenYn: null
-                loginToast: null
-                maxPayerInfoNum: 10
-                maxReceiveAddressNum: 10
-                mngSession: null
-                mobile: '13903509497'
-                modiDate: 1556258693085
-                modifierId: null
-                modifierName: null
-                nickName: 大左
-                openid: null
-                originMobile: null
-                payPwd: null
-                platform: android
-                province: 山西
-                realName: null
-                sessionKey: null
-                sex: 1
-                showMobileYn: 1
-                status: 1
-                subscribeTime: null
-                subscribeYn: 0
-                thirdSession: 1002015-21764-c6645313-4e76-4248-a5e6-14592923fc93
-                touchAppid: wxb570b8449a705308
-                touchOpenid: oP_LWwuNQNsg9ZMlyogUzaQPz-ZM
-                unionid: o0RMh0_M3Ks3z_ZInM2xth5_zyj8
-                unsubscribeTime: null
-                userType: 3
-                vipRegisterTime: 1554856043702
-                wechatId: null
-                wechatIdQrcode: null
-            errorMsg: 全部成功
-            status: 0
-        status_code: 200
 -   name: /xc_uc/inner/dbinfo/user/countShopVip.do
     request:
         headers:
@@ -35349,6 +35284,72 @@ testcases:
         expectData:
             data:
                 vipCount: 15
+            errorMsg: 全部成功
+            status: 0
+        status_code: 200
+-   name: /xc_uc/inner/dbinfo/user/queryByTouchOpenid.do
+    request:
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: PostmanRuntime/7.24.0-beta.3
+        method: GET
+        params:
+            touchOpenid: oP_LWwuNQNsg9ZMlyogUzaQPz-ZM
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByTouchOpenid.do
+    validate:
+        expectData:
+            data:
+                appOpenid: null
+                appToken: null
+                appid: null
+                cardNo: null
+                certificationYn: 0
+                changeInviteCodeTimes: 0
+                city: 忻州
+                comments: null
+                country: 中国
+                createdDate: 1554846169988
+                creatorId: 0
+                creatorName: system
+                deviceId: null
+                followerInviteCode: '1770366'
+                headimgurl: http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoUYVZcn5v2PnicnFtPKpfUILKbe5woXvkMaia0VuwBUNbQLaWjBz50XL4oxcQ5rf7DcPanopg54pvw/132
+                id: 16711792
+                inBacklistYn: 0
+                lastAddressId: null
+                lastPayerId: null
+                loginForbiddenYn: null
+                loginToast: null
+                maxPayerInfoNum: 10
+                maxReceiveAddressNum: 10
+                mngSession: null
+                mobile: null
+                modiDate: 1554856043721
+                modifierId: null
+                modifierName: null
+                mqRefreshUserInfoType: null
+                nickName: 大左
+                openid: null
+                originMobile: null
+                payPwd: null
+                platform: wxtouch
+                province: 山西
+                realName: null
+                sessionKey: null
+                sex: 1
+                showMobileYn: 1
+                status: 1
+                subscribeTime: null
+                subscribeYn: 0
+                thirdSession: 1002012-16175-1659c410-65c4-4de0-a94d-06bb64192b58
+                touchAppid: wxb570b8449a705308
+                touchOpenid: oP_LWwuNQNsg9ZMlyogUzaQPz-ZM
+                unionid: o0RMh0_M3Ks3z_ZInM2xth5_zyj8
+                unsubscribeTime: null
+                userType: 2
+                vipRegisterTime: null
+                wechatId: null
+                wechatIdQrcode: null
             errorMsg: 全部成功
             status: 0
         status_code: 200
