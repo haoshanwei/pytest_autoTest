@@ -12,7 +12,7 @@ testcases:
         method: GET
         params:
             uid: '1028'
-        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/encrypt_uid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/bg/ctl/encrypt_uid.do
     validate:
         expectData:
             clientFrom: ''
@@ -28,7 +28,7 @@ testcases:
         method: GET
         params:
             uid: '0400000600001040070106324'
-        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/decrypt_uid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/bg/ctl/decrypt_uid.do
     validate:
         expectData:
             clientFrom: ''
@@ -51,7 +51,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.17.1
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/decryptIdNo.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/bg/ctl/decryptIdNo.do
     validate:
         expectData:
             clientFrom: ''
@@ -73,7 +73,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.17.1
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/bg/ctl/batch_encrypt_uid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/bg/ctl/batch_encrypt_uid.do
     validate:
         expectData:
             clientFrom: ''

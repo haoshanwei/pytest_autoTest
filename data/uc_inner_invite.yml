@@ -13,7 +13,7 @@ testcases:
         params:
             beginId: '76271'
             endId: '76274'
-        url: http://atxc.beta.daling.com/xc_uc/inner/invite/queryInviteRecords.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/invite/queryInviteRecords.do
     validate:
         expectData:
             data:
@@ -54,7 +54,7 @@ testcases:
         method: GET
         params:
             userId: '498506'
-        url: http://atxc.beta.daling.com/xc_uc/inner/invite/queryInviteRecordByUserId.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/invite/queryInviteRecordByUserId.do
     validate:
         expectData:
             data: null

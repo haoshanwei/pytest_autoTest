@@ -15,17 +15,17 @@ import records
 from rediscluster import RedisCluster
 
 
-UC_DB = records.Database('postgres://pgsql:oe6Imt570Q6I2ZLd@l-db1.beta.bj4.daling.com:5495/sbc_shop_db')
-UC_REDIS = redis.Redis('redis://a-redis1.qa.bj6.daling.com:6379')
-UC_REDIS_CLUSTER = RedisCluster(startup_nodes=[{"host": "a-redis1.qa.bj6.daling.com", "port": 6380},
-                                {"host": "a-redis1.qa.bj6.daling.com", "port": 6381},
-                                {"host": "a-redis1.qa.bj6.daling.com", "port": 6382},
-                                {"host": "a-redis1.qa.bj6.daling.com", "port": 6383},
-                                {"host": "a-redis1.qa.bj6.daling.com", "port": 6384},
-                                {"host": "a-redis1.qa.bj6.daling.com", "port": 6385}
+UC_DB = records.Database('postgres://daling_app_rw:1234@daling@i.pgsql1.qa.daling.com:5410/sbc_shop_db')
+UC_REDIS = redis.Redis('redis://i.redis1.qa.daling.com:6379')
+UC_REDIS_CLUSTER = RedisCluster(startup_nodes=[{"host": "i.redisc1.qa.daling.com", "port": 6380},
+                                {"host": "i.redisc1.qa.daling.com", "port": 6381},
+                                {"host": "i.redisc1.qa.daling.com", "port": 6382},
+                                {"host": "i.redisc1.qa.daling.com", "port": 6383},
+                                {"host": "i.redisc1.qa.daling.com", "port": 6384},
+                                {"host": "i.redisc1.qa.daling.com", "port": 6385}
                                  ])
 
-UC_HOST = 'http://atxc.beta.daling.com'
+UC_HOST = 'http://t.xc.qa.daling.com'
 
 
 # PORD

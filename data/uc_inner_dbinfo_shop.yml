@@ -12,7 +12,7 @@ testcases:
         method: GET
         params:
             shopId: '76274'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryById.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/queryById.do
     validate:
         expectData:
             data:
@@ -55,7 +55,7 @@ testcases:
         method: GET
         params:
             shopIds: 76274,76275
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByIds.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/queryByIds.do
     validate:
         expectData:
             data:
@@ -93,7 +93,7 @@ testcases:
         method: GET
         params:
             mobile: '15058116480'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByMobile.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/queryByMobile.do
     validate:
         expectData:
             data:
@@ -136,7 +136,7 @@ testcases:
         method: GET
         params:
             mobiles: 15058116480,13466977615
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByMobiles.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/queryByMobiles.do
     validate:
         expectData:
             data:
@@ -208,7 +208,7 @@ testcases:
         method: GET
         params:
             ownerId: '1037'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByOwnerId.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/queryByOwnerId.do
     validate:
         expectData:
             data:
@@ -251,7 +251,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/queryByInviteCode.do
     validate:
         expectData:
             data:
@@ -294,7 +294,7 @@ testcases:
         method: GET
         params:
             shopCode: '151802218013461120'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/queryByCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/queryByCode.do
     validate:
         expectData:
             data:
@@ -337,7 +337,7 @@ testcases:
         method: GET
         params:
             shopId: '76274'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/findAllViaFollowerInviteCodeById.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/findAllViaFollowerInviteCodeById.do
     validate:
         expectData:
             data:
@@ -409,7 +409,7 @@ testcases:
         method: GET
         params:
             shopId: '76274'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/findOriginFollowerInviteCodeShopList.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/findOriginFollowerInviteCodeShopList.do
     validate:
         expectData:
             data:
@@ -686,7 +686,7 @@ testcases:
             createTime: '2019-01-01 10:10:10'
             nextShopId: '76274'
             pageSize: '3'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/shopperUntilCreatetime.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/shopperUntilCreatetime.do
     validate:
         expectData:
             data:
@@ -720,7 +720,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/rootShopByInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/rootShopByInviteCode.do
     validate:
         expectData:
             message: 查询成功
@@ -763,7 +763,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/getLinkFailureYnByInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/getLinkFailureYnByInviteCode.do
     validate:
         expectData:
             data: 0
@@ -779,7 +779,7 @@ testcases:
             beginDate: '1502208000000'
             endDate: '1602208000000'
             followerInviteCodes: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/shop/countShops4Follower.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/shop/countShops4Follower.do
     validate:
         expectData:
             data:

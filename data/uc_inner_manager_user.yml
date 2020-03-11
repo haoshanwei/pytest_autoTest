@@ -14,7 +14,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.18.0
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/maxReceiveAddressNumber.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/maxReceiveAddressNumber.do
     validate:
         expectData:
             data:
@@ -32,7 +32,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.18.0
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateFollowerInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/updateFollowerInviteCode.do
     validate:
         expectData:
             data:
@@ -50,7 +50,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.18.0
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateMobile.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/updateMobile.do
     validate:
         expectData:
             data:
@@ -68,7 +68,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.18.0
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateLastUsedPayerId.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/updateLastUsedPayerId.do
     validate:
         expectData:
             data:
@@ -86,7 +86,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.18.0
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/maxPayerInfoNumber.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/maxPayerInfoNumber.do
     validate:
         expectData:
             data:
@@ -104,7 +104,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.18.0
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/updateBackListYn.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/updateBackListYn.do
     validate:
         expectData:
             data:
@@ -122,7 +122,7 @@ testcases:
         params:
             shopOwnerId: '1050'
             type: '1'
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/queryUserBrowse.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/queryUserBrowse.do
     validate:
         expectData:
             data:
@@ -181,7 +181,7 @@ testcases:
         method: GET
         params:
             userId: '11791065'
-        url: http://atxc.beta.daling.com/xc_uc/inner/manager/user/sourceUser.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/manager/user/sourceUser.do
     validate:
         expectData:
             errorMsg: 全部成功

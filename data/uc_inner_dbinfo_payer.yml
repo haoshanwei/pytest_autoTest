@@ -12,7 +12,7 @@ testcases:
         method: GET
         params:
             userId: '1007187'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/payer/queryDefault.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/payer/queryDefault.do
     validate:
         expectData:
             data:
@@ -34,7 +34,7 @@ testcases:
         params:
             payerId: '1002'
             userId: '1007187'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/payer/queryPayerById.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/payer/queryPayerById.do
     validate:
         expectData:
             data:

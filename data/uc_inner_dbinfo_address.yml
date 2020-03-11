@@ -12,7 +12,7 @@ testcases:
         method: GET
         params:
             userId: '1964478'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/address/queryList.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryList.do
     validate:
         expectData:
             data:
@@ -61,7 +61,7 @@ testcases:
         params:
             addressId: '632831'
             userId: '1964478'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/address/queryAddressById.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryAddressById.do
     validate:
         expectData:
             data:
@@ -89,7 +89,7 @@ testcases:
         params:
             addressId: '632831'
             userId: '1964478'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/address/queryDefault.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryDefault.do
     validate:
         expectData:
             data:
@@ -119,7 +119,7 @@ testcases:
             district: 苏尼特右旗
             province: 内蒙古自治区
             userId: '1964478'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/address/queryByArea.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryByArea.do
     validate:
         expectData:
             data:

@@ -12,7 +12,7 @@ testcases:
         method: GET
         params:
             ids: 1964478,878243
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user_shop/uids.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user_shop/uids.do
     validate:
         expectData:
             data:
@@ -46,7 +46,7 @@ testcases:
         method: GET
         params:
             realName: 秋秋
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user_shop/queryByRealname.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user_shop/queryByRealname.do
     validate:
         expectData:
             data:

@@ -12,7 +12,7 @@ testcases:
         method: GET
         params:
             userId: '1964478'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryById.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryById.do
     validate:
         expectData:
             data:
@@ -76,7 +76,7 @@ testcases:
         method: GET
         params:
             userIds: 1964478,878243
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByIds.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByIds.do
     validate:
         expectData:
             data:
@@ -191,7 +191,7 @@ testcases:
         method: GET
         params:
             uids: '[1964478,878243]'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByUids.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByUids.do
     validate:
         expectData:
             data:
@@ -207,7 +207,7 @@ testcases:
         method: GET
         params:
             openid: oolsO0ZzQ2UA92fPnQxBvOZ5Na6I
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByOpenid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByOpenid.do
     validate:
         expectData:
             data:
@@ -271,7 +271,7 @@ testcases:
         method: GET
         params:
             mobile: '15058116480'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByMobile.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByMobile.do
     validate:
         expectData:
             data:
@@ -335,7 +335,7 @@ testcases:
         method: GET
         params:
             mobiles: 15058116480,13466977615
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/checkByMobiles.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/checkByMobiles.do
     validate:
         expectData:
             data:
@@ -351,7 +351,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/findUserPageByInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/findUserPageByInviteCode.do
     validate:
         expectData:
             data:
@@ -1373,7 +1373,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/countUserByInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/countUserByInviteCode.do
     validate:
         expectData:
             data: 91
@@ -1387,7 +1387,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/findShopUserPageByInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/findShopUserPageByInviteCode.do
     validate:
         expectData:
             data:
@@ -1589,7 +1589,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1164950'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/countShopUserByInviteCode.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/countShopUserByInviteCode.do
     validate:
         expectData:
             data: 52
@@ -1604,7 +1604,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.17.1
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByUnionid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByUnionid.do
     validate:
         expectData:
             data:
@@ -1669,7 +1669,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.17.1
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByOpenid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByOpenid.do
     validate:
         expectData:
             data:
@@ -1734,7 +1734,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.17.1
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryGlobalByUnionid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryGlobalByUnionid.do
     validate:
         expectData:
             data:
@@ -1799,7 +1799,7 @@ testcases:
             Content-Type: application/x-www-form-urlencoded
             User-Agent: PostmanRuntime/7.17.1
         method: POST
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByRealnames.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByRealnames.do
     validate:
         expectData:
             data:
@@ -35214,7 +35214,7 @@ testcases:
         method: GET
         params:
             appOpenid: o_KJ5wa00PMmaSuVqetdjZQqg6Dk
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByAppOpenid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByAppOpenid.do
     validate:
         expectData:
             data:
@@ -35279,7 +35279,7 @@ testcases:
         method: GET
         params:
             touchOpenid: oP_LWwuNQNsg9ZMlyogUzaQPz-ZM
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/queryByTouchOpenid.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/queryByTouchOpenid.do
     validate:
         expectData:
             data:
@@ -35344,7 +35344,7 @@ testcases:
         method: GET
         params:
             inviteCode: '1089693'
-        url: http://atxc.beta.daling.com/xc_uc/inner/dbinfo/user/countShopVip.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/user/countShopVip.do
     validate:
         expectData:
             data:

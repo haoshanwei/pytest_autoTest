@@ -12,7 +12,7 @@ testcases:
         method: GET
         params:
             uid: '1964478'
-        url: http://atxc.beta.daling.com/xc_uc/inner/uc/queryById.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/uc/queryById.do
     validate:
         expectData:
             data:
@@ -39,7 +39,7 @@ testcases:
         method: GET
         params:
             userIds: '1964478'
-        url: http://atxc.beta.daling.com/xc_uc/inner/uc/queryByUserIds.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/uc/queryByUserIds.do
     validate:
         expectData:
             data:
@@ -64,7 +64,7 @@ testcases:
         method: GET
         params:
             mobile: '15058116480'
-        url: http://atxc.beta.daling.com/xc_uc/inner/uc/queryByMobile.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/uc/queryByMobile.do
     validate:
         expectData:
             data:
@@ -90,7 +90,7 @@ testcases:
         method: GET
         params:
             userId: '1050'
-        url: http://atxc.beta.daling.com/xc_uc/inner/uc/logoutUser.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/uc/logoutUser.do
     validate:
         expectData:
             data:
