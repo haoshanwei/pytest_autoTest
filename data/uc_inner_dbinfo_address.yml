@@ -51,34 +51,32 @@ testcases:
             errorMsg: 全部成功
             status: 0
         status_code: 200
--   name: /xc_uc/inner/dbinfo/address/queryByArea.do
+-   name: /xc_uc/inner/dbinfo/address/queryAddressById.do
     request:
         headers:
             User-Agent: PostmanRuntime/7.24.0-beta.3
         method: GET
         params:
-            city: 锡林郭勒盟
-            district: 苏尼特右旗
-            province: 内蒙古自治区
+            addressId: '632831'
             userId: '1964478'
-        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryByArea.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryAddressById.do
     validate:
         expectData:
             data:
                 cardNo: kqp9QFN6OdnwHA9aFgd5SWDbCKRmWU/B
                 city: 锡林郭勒盟
-                createdDate: 2018-06-05T01:24:10.871+0000
+                createdDate: 1528161850871
                 defaultYn: 1
                 detail: 尚景园街面阿木古楞裁缝店
                 district: 苏尼特右旗
                 id: 632831
-                modiDate: 2018-06-05T01:32:37.135+0000
+                modiDate: 1528162357135
                 name: 孟根娜布其
                 phone: '15147943808'
                 postCode: null
                 province: 内蒙古自治区
                 userId: 1964478
-            errorMsg: 查询成功
+            errorMsg: 全部成功
             status: 0
         status_code: 200
 -   name: /xc_uc/inner/dbinfo/address/queryDefault.do
@@ -95,12 +93,12 @@ testcases:
             data:
                 cardNo: kqp9QFN6OdnwHA9aFgd5SWDbCKRmWU/B
                 city: 锡林郭勒盟
-                createdDate: 2018-06-05T01:24:10.871+0000
+                createdDate: 1528161850871
                 defaultYn: 1
                 detail: 尚景园街面阿木古楞裁缝店
                 district: 苏尼特右旗
                 id: 632831
-                modiDate: 2018-06-05T01:32:37.135+0000
+                modiDate: 1528162357135
                 name: 孟根娜布其
                 phone: '15147943808'
                 postCode: null
@@ -109,31 +107,33 @@ testcases:
             errorMsg: 全部成功
             status: 0
         status_code: 200
--   name: /xc_uc/inner/dbinfo/address/queryAddressById.do
+-   name: /xc_uc/inner/dbinfo/address/queryByArea.do
     request:
         headers:
             User-Agent: PostmanRuntime/7.24.0-beta.3
         method: GET
         params:
-            addressId: '632831'
+            city: 锡林郭勒盟
+            district: 苏尼特右旗
+            province: 内蒙古自治区
             userId: '1964478'
-        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryAddressById.do
+        url: http://t.xc.qa.daling.com/xc_uc/inner/dbinfo/address/queryByArea.do
     validate:
         expectData:
             data:
                 cardNo: kqp9QFN6OdnwHA9aFgd5SWDbCKRmWU/B
                 city: 锡林郭勒盟
-                createdDate: 2018-06-05T01:24:10.871+0000
+                createdDate: 1528161850871
                 defaultYn: 1
                 detail: 尚景园街面阿木古楞裁缝店
                 district: 苏尼特右旗
                 id: 632831
-                modiDate: 2018-06-05T01:32:37.135+0000
+                modiDate: 1528162357135
                 name: 孟根娜布其
                 phone: '15147943808'
                 postCode: null
                 province: 内蒙古自治区
                 userId: 1964478
-            errorMsg: 全部成功
+            errorMsg: 查询成功
             status: 0
         status_code: 200
