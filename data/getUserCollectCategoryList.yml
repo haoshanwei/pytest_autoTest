@@ -1,0 +1,31 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_collect/userCollect/getUserCollectCategoryList.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.24.0-beta.3
+            ouid: '1964478'
+            platform: wxtouch
+            uid: 0200000501040178408164784
+            utoken: 1002016-30829-3539b5b8-13f7-4457-9b48-2b6000945a9b
+        method: GET
+        url: http://t.xc.qa.daling.com/xc_collect/userCollect/getUserCollectCategoryList.do
+    validate:
+        expectData:
+            data:
+                categoryVOList:
+                -   categoryId: 0
+                    categoryName: 全部
+                    categoryNum: 7
+                -   categoryId: 1004
+                    categoryName: 生鲜食品
+                    categoryNum: 4
+                -   categoryId: 1021
+                    categoryName: 家用电器
+                    categoryNum: 3
+            errorMsg: 处理成功
+            status: 0
+        status_code: 200

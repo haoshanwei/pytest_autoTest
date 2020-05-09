@@ -1,0 +1,301 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: /xc_collect/userCollect/getUserCollectSkuList.do
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.24.0-beta.3
+            ouid: '1964478'
+            platform: wxtouch
+            uid: 0200000501040178408164784
+            utoken: 1002016-30829-3539b5b8-13f7-4457-9b48-2b6000945a9b
+        method: GET
+        params:
+            categoryId: '0'
+            currentPage: '1'
+        url: http://t.xc.qa.daling.com/xc_collect/userCollect/getUserCollectSkuList.do
+    validate:
+        expectData:
+            data:
+                categoryVOList:
+                -   categoryId: 0
+                    categoryName: 全部
+                    categoryNum: 7
+                -   categoryId: 1004
+                    categoryName: 生鲜食品
+                    categoryNum: 4
+                -   categoryId: 1021
+                    categoryName: 家用电器
+                    categoryNum: 3
+                infoVOList:
+                -   activityRule: null
+                    activityStatus: null
+                    activityType: 0
+                    benefitMoney: '20.00'
+                    goodShelfId: 358945
+                    goodsId: '358945'
+                    goodsName: 女款高腰塑身运动爆汗服 黑(L 爆汗外套)
+                    goodsShowDesc: '[设计师]女款高腰塑身运动爆汗服 黑(L 爆汗外套)'
+                    goodsShowName: 中国·HOTSUIT同厂出品
+                    id: 358945
+                    isDutyFree: false
+                    isForeignSupply: 1
+                    isInBond: 0
+                    isInTimeline: 0
+                    lineationPrice: null
+                    marketPrice: 199.0
+                    originalImg: http://img0.daling.com/data/files/mobile/2019/02/22/15508195473656.jpg
+                    original_img: http://img0.daling.com/data/files/mobile/2019/02/22/15508195473656.jpg
+                    preSaleYn: N
+                    profitMoney: 20.0
+                    reducedPrice: null
+                    salePrice: 149.0
+                    salesEndTime: 0
+                    salesEndTimeDiff: 0
+                    salesEndTimeStr: null
+                    salesTime: 0
+                    salesTimeStr: null
+                    shareImage: http://img0.daling.com/data/files/mobile/2019/02/22/15508195473656.jpg
+                    shortTitle: null
+                    sku: WTKF0FMFLX013
+                    skuImgUrl: http://img0.daling.com/data/files/mobile/2019/02/22/15508195473656.jpg
+                    skuNo: WTKF0FMFLX013
+                    skuStatus: SHELF_ON
+                    skuTitle: HOTSUIT同厂出品
+                    spu: TKF0FM
+                    taxRate: 0.0
+                    taxation: 0
+                -   activityRule: null
+                    activityStatus: null
+                    activityType: 0
+                    benefitMoney: '10.00'
+                    goodShelfId: 358942
+                    goodsId: '358942'
+                    goodsName: 女款高腰塑身运动爆汗服 黑(XXL 爆汗长裤)
+                    goodsShowDesc: '[设计师]女款高腰塑身运动爆汗服 黑(XXL 爆汗长裤)'
+                    goodsShowName: 中国·HOTSUIT同厂出品
+                    id: 358942
+                    isDutyFree: false
+                    isForeignSupply: 1
+                    isInBond: 0
+                    isInTimeline: 0
+                    lineationPrice: null
+                    marketPrice: 199.0
+                    originalImg: http://img6.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    original_img: http://img6.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    preSaleYn: N
+                    profitMoney: 10.0
+                    reducedPrice: null
+                    salePrice: 109.0
+                    salesEndTime: 0
+                    salesEndTimeDiff: 0
+                    salesEndTimeStr: null
+                    salesTime: 0
+                    salesTimeStr: null
+                    shareImage: http://img6.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    shortTitle: null
+                    sku: WTKF0FMFLX010
+                    skuImgUrl: http://img6.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    skuNo: WTKF0FMFLX010
+                    skuStatus: SHELF_ON
+                    skuTitle: HOTSUIT同厂出品
+                    spu: TKF0FM
+                    taxRate: 0.0
+                    taxation: 0
+                -   activityRule: null
+                    activityStatus: null
+                    activityType: 0
+                    benefitMoney: '20.00'
+                    goodShelfId: 358940
+                    goodsId: '358940'
+                    goodsName: 女款高腰塑身运动爆汗服 黑(L 爆汗长裤)
+                    goodsShowDesc: '[设计师]女款高腰塑身运动爆汗服 黑(L 爆汗长裤)'
+                    goodsShowName: 中国·HOTSUIT同厂出品
+                    id: 358940
+                    isDutyFree: false
+                    isForeignSupply: 1
+                    isInBond: 0
+                    isInTimeline: 0
+                    lineationPrice: null
+                    marketPrice: 199.0
+                    originalImg: http://img9.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    original_img: http://img9.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    preSaleYn: N
+                    profitMoney: 20.0
+                    reducedPrice: null
+                    salePrice: 119.0
+                    salesEndTime: 0
+                    salesEndTimeDiff: 0
+                    salesEndTimeStr: null
+                    salesTime: 0
+                    salesTimeStr: null
+                    shareImage: http://img9.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    shortTitle: null
+                    sku: WTKF0FMFLX008
+                    skuImgUrl: http://img9.daling.com/data/files/mobile/2019/02/22/15508181368187.jpg
+                    skuNo: WTKF0FMFLX008
+                    skuStatus: SHELF_ON
+                    skuTitle: HOTSUIT同厂出品
+                    spu: TKF0FM
+                    taxRate: 0.0
+                    taxation: 0
+                -   activityRule: null
+                    activityStatus: null
+                    activityType: 0
+                    benefitMoney: '2.00'
+                    goodShelfId: 27778
+                    goodsId: '27778'
+                    goodsName: 云南蒙自石榴 5斤装(单粒200-300g)
+                    goodsShowDesc: '[达令家]云南蒙自石榴 5斤装(单粒200-300g)'
+                    goodsShowName: 中国·香甜可口水润多汁
+                    id: 27778
+                    isDutyFree: false
+                    isForeignSupply: 3
+                    isInBond: 0
+                    isInTimeline: 0
+                    lineationPrice: null
+                    marketPrice: 39.9
+                    originalImg: http://img4.daling.com/data/files/zin/public/common/2019/09/06/12/02/49/ACSDBR1000001170387.JPEG
+                    original_img: http://img4.daling.com/data/files/zin/public/common/2019/09/06/12/02/49/ACSDBR1000001170387.JPEG
+                    preSaleYn: N
+                    profitMoney: 2.0
+                    reducedPrice: null
+                    salePrice: 29.9
+                    salesEndTime: 0
+                    salesEndTimeDiff: 0
+                    salesEndTimeStr: null
+                    salesTime: 0
+                    salesTimeStr: null
+                    shareImage: http://img4.daling.com/data/files/zin/public/common/2019/09/06/12/02/49/ACSDBR1000001170387.JPEG
+                    shortTitle: null
+                    sku: XX5D4AGIB8001
+                    skuImgUrl: http://img4.daling.com/data/files/zin/public/common/2019/09/06/12/02/49/ACSDBR1000001170387.JPEG
+                    skuNo: XX5D4AGIB8001
+                    skuStatus: SHELF_ON
+                    skuTitle: 香甜可口水润多汁
+                    spu: X5D4AG
+                    taxRate: 0.0
+                    taxation: 0
+                -   activityRule: null
+                    activityStatus: null
+                    activityType: 0
+                    benefitMoney: '3.00'
+                    goodShelfId: 731885
+                    goodsId: '731885'
+                    goodsName: 澳洲进口柑 6粒装(单粒200g以上)
+                    goodsShowDesc: '[达令家]澳洲进口柑 6粒装(单粒200g以上)'
+                    goodsShowName: 中国·酸甜爽口饱满多汁
+                    id: 731885
+                    isDutyFree: false
+                    isForeignSupply: 3
+                    isInBond: 0
+                    isInTimeline: 0
+                    lineationPrice: null
+                    marketPrice: 55.9
+                    originalImg: http://img5.daling.com/data/files/zin/2019/07/12/15/56/FA163E721EBDJ7CF4CWIIFM9S6G.jpg
+                    original_img: http://img5.daling.com/data/files/zin/2019/07/12/15/56/FA163E721EBDJ7CF4CWIIFM9S6G.jpg
+                    preSaleYn: N
+                    profitMoney: 3.0
+                    reducedPrice: null
+                    salePrice: 45.9
+                    salesEndTime: 0
+                    salesEndTimeDiff: 0
+                    salesEndTimeStr: null
+                    salesTime: 0
+                    salesTimeStr: null
+                    shareImage: http://img5.daling.com/data/files/zin/2019/07/12/15/56/FA163E721EBDJ7CF4CWIIFM9S6G.jpg
+                    shortTitle: null
+                    sku: XX4GGIOIB8001
+                    skuImgUrl: http://img5.daling.com/data/files/zin/2019/07/12/15/56/FA163E721EBDJ7CF4CWIIFM9S6G.jpg
+                    skuNo: XX4GGIOIB8001
+                    skuStatus: SHELF_ON
+                    skuTitle: 酸甜爽口饱满多汁
+                    spu: X4GGIO
+                    taxRate: 0.0
+                    taxation: 0
+                -   activityRule: null
+                    activityStatus: null
+                    activityType: 0
+                    benefitMoney: '6.00'
+                    goodShelfId: 616678
+                    goodsId: '616678'
+                    goodsName: 【京津冀次日达】美国进口青苹果(8粒 单粒130-150g)
+                    goodsShowDesc: '[达令家]【京津冀次日达】美国进口青苹果(8粒 单粒130-150g)'
+                    goodsShowName: 中国·脆甜多汁爽口
+                    id: 616678
+                    isDutyFree: false
+                    isForeignSupply: 3
+                    isInBond: 0
+                    isInTimeline: 0
+                    lineationPrice: null
+                    marketPrice: 69.0
+                    originalImg: http://img5.daling.com/data/files/zin/2019/05/30/16/28/14187746A583J5UG26NOL1H4EIU.jpg
+                    original_img: http://img5.daling.com/data/files/zin/2019/05/30/16/28/14187746A583J5UG26NOL1H4EIU.jpg
+                    preSaleYn: N
+                    profitMoney: 6.0
+                    reducedPrice: null
+                    salePrice: 59.9
+                    salesEndTime: 0
+                    salesEndTimeDiff: 0
+                    salesEndTimeStr: null
+                    salesTime: 0
+                    salesTimeStr: null
+                    shareImage: http://img5.daling.com/data/files/zin/2019/05/30/16/28/14187746A583J5UG26NOL1H4EIU.jpg
+                    shortTitle: null
+                    sku: XX4GDTYV59001
+                    skuImgUrl: http://img5.daling.com/data/files/zin/2019/05/30/16/28/14187746A583J5UG26NOL1H4EIU.jpg
+                    skuNo: XX4GDTYV59001
+                    skuStatus: SHELF_ON
+                    skuTitle: 脆甜多汁爽口
+                    spu: X4GDTY
+                    taxRate: 0.0
+                    taxation: 0
+                -   activityRule: null
+                    activityStatus: null
+                    activityType: 0
+                    benefitMoney: '5.00'
+                    goodShelfId: 462636
+                    goodsId: '462636'
+                    goodsName: Zespri佳沛 新西兰金奇异果 6粒装(单果93-115g)
+                    goodsShowDesc: '[达令家]Zespri佳沛 新西兰金奇异果 6粒装(单果93-115g)'
+                    goodsShowName: 中国·汁多味美回味无穷
+                    id: 462636
+                    isDutyFree: false
+                    isForeignSupply: 3
+                    isInBond: 0
+                    isInTimeline: 0
+                    lineationPrice: null
+                    marketPrice: 59.9
+                    originalImg: http://img9.daling.com/data/files/zin/2019/04/12/12/39/1418774884DEJ4CC30H210N9MLY.jpg
+                    original_img: http://img9.daling.com/data/files/zin/2019/04/12/12/39/1418774884DEJ4CC30H210N9MLY.jpg
+                    preSaleYn: N
+                    profitMoney: 5.0
+                    reducedPrice: null
+                    salePrice: 49.9
+                    salesEndTime: 0
+                    salesEndTimeDiff: 0
+                    salesEndTimeStr: null
+                    salesTime: 0
+                    salesTimeStr: null
+                    shareImage: http://img9.daling.com/data/files/zin/2019/04/12/12/39/1418774884DEJ4CC30H210N9MLY.jpg
+                    shortTitle: null
+                    sku: XX4FXC6IB8001
+                    skuImgUrl: http://img9.daling.com/data/files/zin/2019/04/12/12/39/1418774884DEJ4CC30H210N9MLY.jpg
+                    skuNo: XX4FXC6IB8001
+                    skuStatus: SHELF_ON
+                    skuTitle: 汁多味美回味无穷
+                    spu: X4FXC6
+                    taxRate: 0.0
+                    taxation: 0
+                pageUtil:
+                    count: 7
+                    currentPage: 1
+                    isLastPage: 0
+                    pageNum: 1
+                    pageSize: 7
+                    startRow: 0
+            errorMsg: 处理成功
+            status: 0
+        status_code: 200

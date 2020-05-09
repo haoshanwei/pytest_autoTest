@@ -1,0 +1,109 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: testcase title
+testcases:
+-   name: 获取收藏的品牌列表
+    request:
+        headers:
+            User-Agent: PostmanRuntime/7.24.0-beta.3
+            platform: wxtouch
+            uid: '0500000200001040070204204'
+            utoken: 1002757-25571-8b83014f-6109-497b-b7ff-ff1448a2d81a
+        method: GET
+        url: http://t.xc.qa.daling.com/xc_collect/userCollect/brand/getCollectBrandList.do
+    validate:
+        expectData:
+            data:
+                currPageNo: 1
+                haveNext: true
+                items:
+                -   brandId: 1456
+                    brandName: 尤妮佳
+                    brandNameEn: Unicharm
+                    code: A1A
+                    country: BrandCountry_JPN
+                    countryTitle: 日本
+                    fullName: 尤妮佳/Unicharm
+                    id: 1456
+                    logoImg: https://imgbeta.daling.com/zin/2019/04/10/21/35/14187746A583J4AL2PW1NJKEU2F.jpg
+                    logoSmallImg: ''
+                    name: 尤妮佳
+                    nameEn: Unicharm
+                    partnerId: null
+                    selfUseYn: N
+                    shortLogoImg: 2019/04/10/21/35/14187746A583J4AL2PW1NJKEU2F.jpg
+                    story: null
+                -   brandId: 1455
+                    brandName: 伊诗露
+                    brandNameEn: Esthe Dew
+                    code: A19
+                    country: BrandCountry_JPN
+                    countryTitle: 日本
+                    fullName: 伊诗露/Esthe Dew
+                    id: 1455
+                    logoImg: ''
+                    logoSmallImg: ''
+                    name: 伊诗露
+                    nameEn: Esthe Dew
+                    partnerId: null
+                    selfUseYn: N
+                    shortLogoImg: ''
+                    story: null
+                -   brandId: 1454
+                    brandName: ''
+                    brandNameEn: COSMOS
+                    code: A18
+                    country: BrandCountry_TPE
+                    countryTitle: 中国台湾
+                    fullName: COSMOS
+                    id: 1454
+                    logoImg: ''
+                    logoSmallImg: ''
+                    name: ''
+                    nameEn: COSMOS
+                    partnerId: null
+                    selfUseYn: N
+                    shortLogoImg: ''
+                    story: null
+                -   brandId: 1452
+                    brandName: 兰芝
+                    brandNameEn: Laneige
+                    code: A16
+                    country: BrandCountry_KOR
+                    countryTitle: 韩国
+                    fullName: 兰芝/Laneige
+                    id: 1452
+                    logoImg: https://imgbeta.daling.com/zin/2019/04/09/18/23/FA163EEDE45AJ49I1RZ7IL1J88T.jpg
+                    logoSmallImg: ''
+                    name: 兰芝
+                    nameEn: Laneige
+                    partnerId: null
+                    selfUseYn: N
+                    shortLogoImg: 2019/04/09/18/23/FA163EEDE45AJ49I1RZ7IL1J88T.jpg
+                    story: null
+                -   brandId: 1451
+                    brandName: ''
+                    brandNameEn: Minus
+                    code: A15
+                    country: BrandCountry_KOR
+                    countryTitle: 韩国
+                    fullName: Minus
+                    id: 1451
+                    logoImg: ''
+                    logoSmallImg: ''
+                    name: ''
+                    nameEn: Minus
+                    partnerId: null
+                    selfUseYn: N
+                    shortLogoImg: ''
+                    story: null
+                nextIndex: 0
+                pageSize: 30
+                previousIndex: 0
+                startIndex: 0
+                totalCount: 0
+                totalPages: 1
+            errorMsg: 处理成功
+            status: 0
+        status_code: 200
